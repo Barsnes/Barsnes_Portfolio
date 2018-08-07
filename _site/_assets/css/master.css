@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Raleway;
+  src:   url("../fonts/raleway/raleway-extrabold.woff") format('woff');
+}
+@font-face {
+  font-family: Lato;
+  src:  url('../fonts/lato/lato-regular.woff2') format('woff2'),
+        url('../fonts/lato/lato-regular.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+  color: #FFF;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.header h1 {
+  padding-top: 15%;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header h2 {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Lato"
+}
+
+.header a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header i {
+  font-size: 3em;
+  margin-top: 16.5rem
+}
+
+/* portfolio */
+
+.portfolio {
+  height: auto;
+  width: 100%
+}
+
+/* portfolio images */
+
+.image_list {
+  width: 100%;
+  height: auto;
+}
+
+.image_list img {
+  float: left;
+  width: 33.3333%;
+  height: auto;
+}
