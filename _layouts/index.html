@@ -2,15 +2,13 @@
 {% include header.html %}
 
 <div class="portfolio" id="portfolio">
-
-{% for image in site.images limit:12 %}
   <div class="image_list">
+    {% for image in site.images limit:12 %}
 
-    <img src="{{ image.imageurl }}" alt="{{ image.description }}">
+      <img src="{{ image.imageurl }}" alt="{{ image.description }}">
 
+    {% endfor %}
   </div>
-{% endfor %}
-
 </div>
 
 <!-- Netlify CMS redirect to /admin -->

@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="_assets/css/cookies.css"/>
   <!-- Jquery -->
   <script src="_assets/js/jquery.js"></script>
-  <!-- Google Strucutred Data -->
+  
 </head>
 
 <body>
@@ -31,13 +31,42 @@
 
 
 <div class="portfolio" id="portfolio">
-
-
   <div class="image_list">
+    
 
-    <img src="_assets/images/header.jpg" alt="this is an test description">
+      <img src="_assets/images/header.jpg" alt="this is an test description">
 
+    
+
+      <img src="/_assets/images/img_7337-3.jpg" alt="a picture from USA">
+
+    
+
+      <img src="/_assets/images/img_7408.jpg" alt="new york picture">
+
+    
+
+      <img src="/_assets/images/img_7416.jpg" alt="a picture from new york">
+
+    
   </div>
-
-
 </div>
+
+<!-- Netlify CMS redirect to /admin -->
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+
+
+</body>
+
