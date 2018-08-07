@@ -1,9 +1,14 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
   repo: Barsnes/Barsnes_Portfolio
 
 media_folder: "_assets/images/" # Media files will be stored in the repo under images/uploads
+
+display_url: https://barsnes.tk
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
 
 collections:
   - name: "image" # Used in routes, ie.: /admin/collections/:slug/edit
