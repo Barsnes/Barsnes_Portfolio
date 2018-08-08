@@ -36,7 +36,7 @@ hr {
   padding-top: 20%;
   margin: 0;
   font-size: 3rem;
-  text-shadow: 0 0 20 #00000070
+  text-shadow: 0 0 0 30px #00000080
 }
 
 .header hr {
@@ -47,7 +47,7 @@ hr {
   font-size: 2em;
   margin: 0;
   font-family: "Lato";
-  text-shadow: 0 0 20 #00000070
+  text-shadow: 0 0 0 30px #00000080
 }
 
 .header a {
@@ -73,6 +73,56 @@ hr {
 .portfolio h1 {
   padding: 4rem;
   margin: 0;
+}
+
+.portfolio_navlist, .programs {
+  background-color: #10aded
+}
+
+.portfolio_navlist h1 {
+  padding: 1.4rem;
+  margin: 0;
+}
+
+.portfolio_nav {
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 0 0 0 30px #00000080
+}
+
+.portfolio_nav nav {
+  display: inline-block;
+}
+
+.portfolio_nav nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato";
+  color: #FFF;
+  display: inline-block;
+  font-size: 1rem
+}
+
+.portfolio_nav ul {
+  margin: 0;
+  padding: 1.3rem 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+.portfolio_nav li {
+  list-style: none;
+}
+
+.portfolio_nav a {
+
+}
+
+.portfolio_nav li {
+
 }
 
 /* portfolio images */
