@@ -14,3 +14,10 @@ plugins:
 
 collections:
   - images
+
+defaults:
+  -
+    scope:
+      path:            "admin"
+    values:
+      sitemap:         false

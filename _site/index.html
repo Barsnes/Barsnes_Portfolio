@@ -23,6 +23,7 @@
 <div class="header">
 
   <h1>Tobias Barsnes</h1>
+  <hr>
   <h2>Portfolio</h2>
 
   <a href="#portfolio"><i class="fal fa-chevron-down"></i></a>
@@ -31,24 +32,77 @@
 
 
 <div class="portfolio" id="portfolio">
+
+  <h1><i class="fal fa-camera-retro"></i> Photographs</h1>
+
   <div class="image_list">
-    
 
-      <img src="_assets/images/header.jpg" alt="this is an test description">
+  <div class="image_container">
+      <img src="/_assets/images/img_7528.jpg" alt="Picture of a BMW">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>BMW</h1>
+            <hr>
+          <a href="/_assets/images/img_7528.jpg"><h3>See full image</h3></a>
+        </div>
+      </div>
+  </div>
 
-    
-
+  <div class="image_container">
       <img src="/_assets/images/img_7337-3.jpg" alt="a picture from USA">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Muhlenberg College</h1>
+            <hr>
+          <a href="/_assets/images/img_7337-3.jpg"><h3>See full image</h3></a>
+        </div>
+      </div>
+  </div>
 
-    
-
+  <div class="image_container">
       <img src="/_assets/images/img_7408.jpg" alt="new york picture">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>New York 2</h1>
+            <hr>
+          <a href="/_assets/images/img_7408.jpg"><h3>See full image</h3></a>
+        </div>
+      </div>
+  </div>
 
-    
-
+  <div class="image_container">
       <img src="/_assets/images/img_7416.jpg" alt="a picture from new york">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>New York</h1>
+            <hr>
+          <a href="/_assets/images/img_7416.jpg"><h3>See full image</h3></a>
+        </div>
+      </div>
+  </div>
 
-    
+  <div class="image_container">
+      <img src="/_assets/images/img_8139.jpg" alt="Picture of Sara Lysgård">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Sara L</h1>
+            <hr>
+          <a href="/_assets/images/img_8139.jpg"><h3>See full image</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container">
+      <img src="/_assets/images/img_8479-edit.jpg" alt="Picture of Sara Lysgård">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Sara Lysgård</h1>
+            <hr>
+          <a href="/_assets/images/img_8479-edit.jpg"><h3>See full image</h3></a>
+        </div>
+      </div>
+  </div>
+
   </div>
 </div>
 
@@ -66,7 +120,29 @@
   }
 </script>
 
+<div class="footer">
 
+  <h1>Copyright © 2018 Tobias Barsnes All Rights Reserved.</h1>
+
+</div>
+
+<!-- Smooth Scroll -->
+
+  <script>
+   $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
 
 </body>
 
