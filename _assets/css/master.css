@@ -190,12 +190,16 @@ a:-webkit-any-link {
 .about {
   width: 100%;
   text-align: center;
+  background-color: #10aded;
+  margin: 0;
+  padding: 1rem;
 }
 
 .about_content {
   width: 70%;
-  margin: 15% 0;
+  margin: 1.5em 15%;
   text-align: left;
+  font-family: "Lato"
 }
 
 

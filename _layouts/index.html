@@ -44,14 +44,14 @@
   </div>
 </div>
 
-{% for about in site.about %}
 <div class="about">
+  <h1>{{ page.about_title }}</h1>
   <div class="about_content">
-    <h1>{{ about.title }}</h1>
-    <p>{{ about.content }}</p>
+    <p>{{ page.about_content }}</p>
   </div>
 </div>
-{% endfor %}
+
+
 <!-- Netlify CMS redirect to /admin -->
 
 <script>
