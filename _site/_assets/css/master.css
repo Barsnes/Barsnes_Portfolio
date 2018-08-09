@@ -188,7 +188,7 @@ a:-webkit-any-link {
 /* About */
 
 .about {
-  width: 100%;
+  width: auto;
   text-align: center;
   background-color: #10aded;
   margin: 0;
@@ -255,6 +255,14 @@ a:-webkit-any-link {
   -moz-column-count:    2;
   -webkit-column-count: 2;
   column-count:         2;
+  }
+
+  .logo {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: .5rem;
+    left: .5rem;
   }
 }
 
