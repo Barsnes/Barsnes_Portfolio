@@ -32,3 +32,12 @@ collections:
       - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
+
+  - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "About" # Used in the UI, ie.: "New Post"
+    folder: "/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "About", name: "content", widget: "markdown"}
