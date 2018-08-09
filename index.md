@@ -1,5 +1,4 @@
 ---
-layout: index
 about_title: About Me
 about_content: >-
   I am a 17 year old boy from Norway, that loves doing photography, design and
@@ -7,5 +6,6 @@ about_content: >-
   camera at hand, I like to take photographs.
 
 
-  ![]()
+  ![Picture of Tobias Barsnes](/_assets/images/untitled-1.png)
 ---
+
