@@ -117,6 +117,7 @@ a:-webkit-any-link {
   column-count:         3;
   column-gap:           0px;
   background-color: #A55;
+  min-height: 100vh;
 }
 
 .image_container {
