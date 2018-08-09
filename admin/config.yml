@@ -43,6 +43,6 @@ collections:
         file: "index.md"
         delete: false
         fields: # The fields each document in this collection have
-          - {label: "Layout", name: "layout", default: "index", widget. "hidden"}
+          - {label: "Layout", name: "layout", default: "index", widget: "hidden"}
           - {label: "Title", name: "about_title", widget: "string"}
           - {label: "Content", name: "body", widget: "markdown"}
