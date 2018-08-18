@@ -18,9 +18,59 @@
 
 </head>
 
-<div class="logo">
-  <a href="/index"><img src="/_assets/logo/logo.png" alt="Barsnes logo"></a>
+<header>
+  <nav class="clearfix" id="nav">
+    <div class="navbar">
+      <a href="#" id="hamburger-button">
+        <span class="hamburger-icon_top"></span>
+        <span class="hamburger-icon"></span>
+        <span class="hamburger-icon_bottom"></span>
+      </a>
+    </div>
+    <ul>
+      <li><a href="/index">Home</a></li>
+      <li><a href="/index#portfolio">Work</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+<script type="text/javascript">
+  var button = document.getElementById('hamburger-button');
+  var nav = document.getElementById('nav');
+  var links = document.querySelectorAll("nav li a");
+
+  button.addEventListener('click', function (event) {
+  event.preventDefault(); // don't jump to anchor, in this case top of the page, on click of hamburger button
+
+  toggleNav();
+  });
+
+  for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function (event) {
+    event.preventDefault(); // don't jump to anchor, in this case top of the page, on click of nav item/link
+
+    toggleNav();
+  });
+  }
+
+  function toggleNav() {
+  nav.classList.toggle('open');
+  }
+</script>
+
+</header>
+
+<body>
+
+<div class="header">
+
+  <h1>Tobias Barsnes</h1>
+  <hr>
+  <h2>Portfolio</h2>
+
+  <a href="#portfolio"><i class="fal fa-chevron-down"></i></a>
+
 </div>
+
 
 
 <div class="portfolio">

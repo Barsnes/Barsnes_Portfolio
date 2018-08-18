@@ -11,7 +11,7 @@
 
   <a href="photographs"><h1><i class="fal fa-camera-retro"></i> Photographs</h1></a>
 
-  <div id="#photographs" class="image_list">
+  <div id="#photographs" class="image_list hover">
 {% for image in site.images limit:6 %}
   <div class="image_container">
       <img src="{{ image.imageurl }}" alt="{{ image.description }}">
@@ -28,7 +28,7 @@
 
   <a href="graphics"><h1><i class="fal fa-object-group"></i> Graphics</h1></a>
 
-  <div id="graphics" class="image_list">
+  <div id="graphics" class="image_list hover">
 {% for graphic in site.graphics limit:5 %}
   <div class="image_container">
       <img src="{{ graphic.imageurl }}" alt="{{ graphic.description }}">
