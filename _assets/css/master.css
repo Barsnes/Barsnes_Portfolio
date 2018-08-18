@@ -284,7 +284,7 @@ a:-webkit-any-link {
   margin: 0;
 }
 
-.image_container:hover .image_description {
+.hover:hover .image_description {
   display: block;
   background-color: #0d355a70;
 }

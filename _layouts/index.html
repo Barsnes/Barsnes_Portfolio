@@ -13,7 +13,7 @@
 
   <div id="#photographs" class="image_list">
 {% for image in site.images limit:6 %}
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="{{ image.imageurl }}" alt="{{ image.description }}">
       <div class="image_description">
         <div class="image_contents">
@@ -30,7 +30,7 @@
 
   <div id="graphics" class="image_list">
 {% for graphic in site.graphics limit:5 %}
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="{{ graphic.imageurl }}" alt="{{ graphic.description }}">
       <div class="image_description">
         <div class="image_contents">
