@@ -18,54 +18,15 @@
 
 </head>
 
-<header>
-  <nav class="clearfix" id="nav">
-    <div class="navbar">
-      <a href="#" id="hamburger-button">
-        <span class="hamburger-icon_top"></span>
-        <span class="hamburger-icon"></span>
-        <span class="hamburger-icon_bottom"></span>
-      </a>
-    </div>
-    <ul>
-      <li><a href="/index">Home</a></li>
-      <li><a href="/index#portfolio">Work</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
-  </nav>
-<script type="text/javascript">
-  var button = document.getElementById('hamburger-button');
-  var nav = document.getElementById('nav');
-  var links = document.querySelectorAll("nav li a");
 
-  button.addEventListener('click', function (event) {
-  event.preventDefault(); // don't jump to anchor, in this case top of the page, on click of hamburger button
-
-  toggleNav();
-  });
-
-  for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function (event) {
-    event.preventDefault(); // don't jump to anchor, in this case top of the page, on click of nav item/link
-
-    toggleNav();
-  });
-  }
-
-  function toggleNav() {
-  nav.classList.toggle('open');
-  }
-</script>
-
-</header>
 
 <body>
 
 <div class="header">
 
-  <h1>Tobias Barsnes</h1>
+  <a href="https://barsnes.tk"><h1>Tobias Barsnes</h1>
   <hr>
-  <h2>Portfolio</h2>
+  <h2>Portfolio</h2></a>
 
   <a href="#portfolio"><i class="fal fa-chevron-down"></i></a>
 
@@ -84,7 +45,7 @@
 
   <div id="#photographs" class="image_list">
 
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="/_assets/images/img_7528.jpg" alt="Picture of a BMW">
       <div class="image_description">
         <div class="image_contents">
@@ -95,7 +56,40 @@
       </div>
   </div>
 
-  <div class="image_container">
+  <div class="image_container hover">
+      <img src="/_assets/images/img_9776.jpg" alt="Endre Stejde feeding a sheep">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Endre Stedje</h1>
+            <hr>
+          <a href="photographs"><h3>See more images</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
+      <img src="/_assets/images/wallet_floating.jpg" alt="A picture where the money is floating">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Floating Money</h1>
+            <hr>
+          <a href="photographs"><h3>See more images</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
+      <img src="/_assets/images/tobias-barsnes-496300-unsplash.jpg" alt="A pictures of Sennheiser headphones">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Headphones</h1>
+            <hr>
+          <a href="photographs"><h3>See more images</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
       <img src="/_assets/images/img_7337-3.jpg" alt="a picture from USA">
       <div class="image_description">
         <div class="image_contents">
@@ -106,44 +100,11 @@
       </div>
   </div>
 
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="/_assets/images/img_7408.jpg" alt="new york picture">
       <div class="image_description">
         <div class="image_contents">
-          <h1>New York 2</h1>
-            <hr>
-          <a href="photographs"><h3>See more images</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container">
-      <img src="/_assets/images/img_7416.jpg" alt="a picture from new york">
-      <div class="image_description">
-        <div class="image_contents">
           <h1>New York</h1>
-            <hr>
-          <a href="photographs"><h3>See more images</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container">
-      <img src="/_assets/images/img_8139.jpg" alt="Picture of Sara Lysgård">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Sara Lysgård</h1>
-            <hr>
-          <a href="photographs"><h3>See more images</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container">
-      <img src="/_assets/images/img_8479-edit.jpg" alt="Picture of Sara Lysgård">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Sara Lysgård</h1>
             <hr>
           <a href="photographs"><h3>See more images</h3></a>
         </div>
@@ -156,7 +117,7 @@
 
   <div id="graphics" class="image_list">
 
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="/_assets/images/logo2.png" alt="A logo for Barsnes Bryggeri">
       <div class="image_description">
         <div class="image_contents">
@@ -167,7 +128,7 @@
       </div>
   </div>
 
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="/_assets/images/geo1.png" alt="A Snapchat geofilter for Bergen">
       <div class="image_description">
         <div class="image_contents">
@@ -178,7 +139,18 @@
       </div>
   </div>
 
-  <div class="image_container">
+  <div class="image_container hover">
+      <img src="/_assets/images/plakat_jail.png" alt="A concept poster for BRIX Energy Drink">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Concept Poster</h1>
+            <hr>
+          <a href="graphics"><h3>See more graphics</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
       <img src="/_assets/images/planet_discovery.png" alt="A logo concept for a brand named "Planet Discovery"">
       <div class="image_description">
         <div class="image_contents">
@@ -189,22 +161,11 @@
       </div>
   </div>
 
-  <div class="image_container">
+  <div class="image_container hover">
       <img src="/_assets/images/logo4.png" alt="A logo for Quixz eSports">
       <div class="image_description">
         <div class="image_contents">
           <h1>Quixz eSports</h1>
-            <hr>
-          <a href="graphics"><h3>See more graphics</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container">
-      <img src="/_assets/images/geo6.png" alt="A Snapchat geofilter for Sogndal">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Sogndal Geofilter</h1>
             <hr>
           <a href="graphics"><h3>See more graphics</h3></a>
         </div>
