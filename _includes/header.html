@@ -3,11 +3,27 @@
 <body>
 
 <div class="header">
-
-  <a href="https://barsnes.tk"><h1>Tobias Barsnes</h1>
-  <hr>
-  <h2>Portfolio</h2></a>
-
-  <a href="#portfolio"><i class="fal fa-chevron-down"></i></a>
-
+    <a href="{{ baseurl }}/index"><img src="{{ baseurl }}/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul class="menulist navlist">
+        <li><a href="{{ baseurl }}/index">Home</a></li>
+        <li><a href="{{ baseurl }}/articles">Articles</a></li>
+        <li><a href="{{ baseurl }}/portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
 </div>
+
+<!-- Hamburger Menu -->
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('.menulist').toggleClass('active')
+          $('.menulist').toggleClass('navlist')
+          $('i').toggleClass('notactive');
+        })
+      })
+  </script>

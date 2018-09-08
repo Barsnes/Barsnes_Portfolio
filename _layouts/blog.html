@@ -1,7 +1,9 @@
 {% include head.html %}
+{% include header.html %}
 
 <div class="article">
-  <img src="{{ baseurl }}/{{ page.image }}" alt="{{ page.description }}" og:image></img>
+  <img src="{{ page.image }}" alt="{{ page.description }}" og:image></img>
+
 
   <h1>{{ page.title }}</h1>
   <h5 style="font-size:.9em; color:#FFF; letter-spacing:1px">Written by {{ page.author }}</h5>
@@ -14,14 +16,14 @@
 <style>
 
   body {
-    background-color: #2B63AF
+    background-color: #323232
   }
 
   .article {
     color: #000;
     width: 650px;
     margin: 0 calc((100% - 650px) / 2);
-    padding-top: 7em;
+    padding-top: 1em;
     color: #FFF;
     margin-bottom: 10em
   }
@@ -33,7 +35,8 @@
   }
 
   .article p {
-    font-family: "Lato"
+    font-family: "Lato";
+    padding-top: 1em;
   }
 
   .article a {
@@ -47,9 +50,9 @@
 
   .article h5 {
     font-family: "Lato";
-    padding: 0;
+    padding: .5em 0;
     margin: 0 .1rem;
-    color: #F8B52A;
+    color: lightblue;
   }
 
 @media (max-width:1050px) {

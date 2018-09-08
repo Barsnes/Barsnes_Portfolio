@@ -14,8 +14,9 @@
   <!-- Cookies Consent -->
   <link rel="stylesheet" type="text/css" href="_assets/css/cookies.css"/>
   <!-- Jquery -->
-  <script src="_assets/js/jquery.js"></script>
-
+  <script src="/_assets/js/jquery.js"></script>
+  <!-- Google  -->
+  <meta name="google-site-verification" content="1Uzpi4sY6CTW4W1M3I7xPBIpJFBeuzXm51yETIOOf30" />
 </head>
 
 
@@ -23,14 +24,30 @@
 <body>
 
 <div class="header">
-
-  <a href="https://barsnes.tk"><h1>Tobias Barsnes</h1>
-  <hr>
-  <h2>Portfolio</h2></a>
-
-  <a href="#portfolio"><i class="fal fa-chevron-down"></i></a>
-
+    <a href="/index"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul class="menulist navlist">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
 </div>
+
+<!-- Hamburger Menu -->
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('.menulist').toggleClass('active')
+          $('.menulist').toggleClass('navlist')
+          $('i').toggleClass('notactive');
+        })
+      })
+  </script>
 
 
 
@@ -69,6 +86,17 @@
         <h1>Concept Poster</h1>
           <hr />
         <a href="/_assets/images/plakat_jail.png"><h3>See full image</h3></a>
+      </div>
+    </div>
+</div>
+
+<div class="image_container">
+    <img src="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png" alt="A concept logo" />
+    <div class="image_description">
+      <div class="image_contents">
+        <h1>Fox Eternity</h1>
+          <hr />
+        <a href="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png"><h3>See full image</h3></a>
       </div>
     </div>
 </div>

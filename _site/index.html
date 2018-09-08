@@ -14,8 +14,9 @@
   <!-- Cookies Consent -->
   <link rel="stylesheet" type="text/css" href="_assets/css/cookies.css"/>
   <!-- Jquery -->
-  <script src="_assets/js/jquery.js"></script>
-
+  <script src="/_assets/js/jquery.js"></script>
+  <!-- Google  -->
+  <meta name="google-site-verification" content="1Uzpi4sY6CTW4W1M3I7xPBIpJFBeuzXm51yETIOOf30" />
 </head>
 
 
@@ -23,17 +24,32 @@
 <body>
 
 <div class="header">
-
-  <a href="https://barsnes.tk"><h1>Tobias Barsnes</h1>
-  <hr>
-  <h2>Portfolio</h2></a>
-
-  <a href="#portfolio"><i class="fal fa-chevron-down"></i></a>
-
+    <a href="/index"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul class="menulist navlist">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
 </div>
 
+<!-- Hamburger Menu -->
 
-<div class="portfolio" id="portfolio">
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('.menulist').toggleClass('active')
+          $('.menulist').toggleClass('navlist')
+          $('i').toggleClass('notactive');
+        })
+      })
+  </script>
+
+
 
 <!--
   <div class="programs">
@@ -41,6 +57,25 @@
   </div>
 -->
 
+
+<div class="blog__list">
+
+  <h2>Recent Articles</h2>
+
+  
+
+    <a class="blog__link" href="/2018/08/new-york.html">
+
+              <h1>Using Netlify and Jekyll to build a blog</h1>
+              <img src="https://source.unsplash.com/1920x1080" alt="" class="blog__image">
+              <div class="blog__shadow"></div>
+
+    </a>
+
+  
+  </div>
+
+<div class="portfolio" id="portfolio">
   <a href="photographs"><h1><i class="fal fa-camera-retro"></i> Photographs</h1></a>
 
   <div id="#photographs" class="image_list">
@@ -151,10 +186,10 @@
   </div>
 
   <div class="image_container hover">
-      <img src="/_assets/images/planet_discovery.png" alt="A logo concept for a brand named "Planet Discovery"">
+      <img src="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png" alt="A concept logo">
       <div class="image_description">
         <div class="image_contents">
-          <h1>Planet Discovery</h1>
+          <h1>Fox Eternity</h1>
             <hr>
           <a href="graphics"><h3>See more graphics</h3></a>
         </div>
@@ -162,10 +197,10 @@
   </div>
 
   <div class="image_container hover">
-      <img src="/_assets/images/logo4.png" alt="A logo for Quixz eSports">
+      <img src="/_assets/images/planet_discovery.png" alt="A logo concept for a brand named "Planet Discovery"">
       <div class="image_description">
         <div class="image_contents">
-          <h1>Quixz eSports</h1>
+          <h1>Planet Discovery</h1>
             <hr>
           <a href="graphics"><h3>See more graphics</h3></a>
         </div>

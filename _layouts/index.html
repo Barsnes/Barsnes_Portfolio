@@ -1,7 +1,6 @@
 {% include head.html %}
 {% include header.html %}
 
-<div class="portfolio" id="portfolio">
 
 <!--
   <div class="programs">
@@ -9,6 +8,25 @@
   </div>
 -->
 
+
+<div class="blog__list">
+
+  <h2>Recent Articles</h2>
+
+  {% for post in site.posts %}
+
+    <a class="blog__link" href="{{ post.url }}">
+
+              <h1>{{ post.title }}</h1>
+              <img src="{{ post.image }}" alt="" class="blog__image">
+              <div class="blog__shadow"></div>
+
+    </a>
+
+  {% endfor %}
+  </div>
+
+<div class="portfolio" id="portfolio">
   <a href="photographs"><h1><i class="fal fa-camera-retro"></i> Photographs</h1></a>
 
   <div id="#photographs" class="image_list">

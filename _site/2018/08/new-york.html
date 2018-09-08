@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barsnes Using Netlify and Jekyll to build a blog</title>
+  <link REL="SHORTCUT ICON" HREF="/_assets/logo/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that takes stunning photographs and makes fantastic graphics." />
+  <meta name="keywords" content="barsnes, tobias barsnes"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/_assets/css/master.css">
+  <link href="/_assets/css/fontawesome/css/all.css" rel="stylesheet">
+  <!-- Netlify Identity -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Cookies Consent -->
+  <link rel="stylesheet" type="text/css" href="_assets/css/cookies.css"/>
+  <!-- Jquery -->
+  <script src="/_assets/js/jquery.js"></script>
+  <!-- Google  -->
+  <meta name="google-site-verification" content="1Uzpi4sY6CTW4W1M3I7xPBIpJFBeuzXm51yETIOOf30" />
+</head>
+
+
+
+<body>
+
+<div class="header">
+    <a href="/index"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul class="menulist navlist">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+</div>
+
+<!-- Hamburger Menu -->
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('.menulist').toggleClass('active')
+          $('.menulist').toggleClass('navlist')
+          $('i').toggleClass('notactive');
+        })
+      })
+  </script>
+
+
+<div class="article">
+  <img src="https://source.unsplash.com/1920x1080" alt="" og:image></img>
+
+
+  <h1>Using Netlify and Jekyll to build a blog</h1>
+  <h5 style="font-size:.9em; color:#FFF; letter-spacing:1px">Written by Tobias Barsnes</h5>
+  <h5>August 18, 2018</h5>
+  <hr>
+<p>Last week I traveled to New York. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+<style>
+
+  body {
+    background-color: #323232
+  }
+
+  .article {
+    color: #000;
+    width: 650px;
+    margin: 0 calc((100% - 650px) / 2);
+    padding-top: 1em;
+    color: #FFF;
+    margin-bottom: 10em
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #00000070
+  }
+
+  .article p {
+    font-family: "Lato";
+    padding-top: 1em;
+  }
+
+  .article a {
+    color: #F8B52A;
+    text-decoration: none
+  }
+
+  .article h1 {
+    margin-bottom: .2em
+  }
+
+  .article h5 {
+    font-family: "Lato";
+    padding: .5em 0;
+    margin: 0 .1rem;
+    color: lightblue;
+  }
+
+@media (max-width:1050px) {
+
+  .article {
+    width: 100%;
+    margin: 0;
+  }
+
+  .article p {
+    padding: 0 1em
+  }
+
+  .article h1 {
+    padding: 0 .5em
+  }
+
+  .article h5 {
+    padding: 0 1rem;
+  }
+
+  .article hr {
+    margin: .5em;
+  }
+}
+
+}
+
+</style>
+
+<div class="footer">
+
+  <h1>Copyright © 2018 Tobias Barsnes All Rights Reserved.</h1>
+
+</div>
+
+<!-- Smooth Scroll -->
+
+  <script>
+   $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+</body>
+
