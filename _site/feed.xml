@@ -1,1 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-07T19:39:29-05:00</updated><id>http://localhost:4000/</id><title type="html">Barsnes</title><subtitle></subtitle><entry><title type="html">Using Netlify and Jekyll to build a blog</title><link href="http://localhost:4000/2018/08/new-york.html" rel="alternate" type="text/html" title="Using Netlify and Jekyll to build a blog" /><published>2018-08-18T00:00:00-05:00</published><updated>2018-08-18T00:00:00-05:00</updated><id>http://localhost:4000/2018/08/new-york</id><content type="html" xml:base="http://localhost:4000/2018/08/new-york.html">&lt;p&gt;Last week I traveled to New York. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</content><author><name>Tobias Barsnes</name></author><summary type="html">Last week I traveled to New York. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://source.unsplash.com/1920x1080" /></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-08T12:32:09-05:00</updated><id>http://localhost:4000/</id><title type="html">Barsnes</title><subtitle></subtitle><entry><title type="html">Using Netlify and Jekyll to build a website</title><link href="http://localhost:4000/2018/08/new-york.html" rel="alternate" type="text/html" title="Using Netlify and Jekyll to build a website" /><published>2018-08-18T00:00:00-05:00</published><updated>2018-08-18T00:00:00-05:00</updated><id>http://localhost:4000/2018/08/new-york</id><content type="html" xml:base="http://localhost:4000/2018/08/new-york.html">&lt;p&gt;Some months ago I looked into creating a website for my esports team. So, I searched up the best methods of doing it, and most articles told me to use Wordpress, well I did not want to do that, as I wanted to have control over everything, and for free. I had been using &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; and github to host a &lt;a href=&quot;https://findingfutures.eu&quot;&gt;test site&lt;/a&gt; I created with my friend. We were really happy with how their services worked, but wanted to be able to change things in a simple dashboard, and not having to code everything, bit by bit. The answer was right in front of us, to use Jekyll and Netlify CMS. You can find the finished code for this tutorial in &lt;a href=&quot;https://github.com/Barsnes/fox_eternity&quot;&gt;this github repo&lt;/a&gt;, and contact me if you have any further questions.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-you-do-with-jekyll-and-netlify-cms&quot;&gt;What can you do with Jekyll and Netlify CMS?&lt;/h2&gt;
+
+&lt;p&gt;Well, good question, it’s actually a quite simple one to answer. Jekyll is a static site builder, meaning that it will take different files, typically markdown or html, and put them together in one html file. This is useful for a single, or multi-page website, such as a blog or a portfolio. Using this with Netlify CMS (Content Management System), will make it easy to push any type of content to your website. It is kind of like baking a cake, you need&lt;/p&gt;
+
+&lt;p&gt;I will not be covering how to install Jekyll, but I will be showing you how to install, and use Netlify CMS. If you have any further questions, you can either go to the &lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;Jekyll docs&lt;/a&gt;, &lt;a href=&quot;https://www.netlifycms.org/&quot;&gt;Netlify CMS docs&lt;/a&gt;, or contact me.&lt;/p&gt;
+
+&lt;h2 id=&quot;deploying-your-site-with-netlify&quot;&gt;Deploying your site with Netlify&lt;/h2&gt;
+
+&lt;p&gt;To use Netlify’s awesome CMS, you will need to host your website using their platform, and to implement their &lt;a href=&quot;https://www.netlify.com/docs/identity/&quot;&gt;Identity&lt;/a&gt;. Identity will let you have a log in method to you CMS dashboard, and even have 5 invite only users, for free!&lt;/p&gt;
+
+&lt;p&gt;We will start of by creating a new folder on our computer, with your fresh Jekyll website. I am using MacOS, but I will be showing both commands for installing and creating the Jekyll setup. Start by opening your terminal or Ruby terminal, then creating a new folder somewhere on your computer, and type the following commands;&lt;/p&gt;
+
+&lt;p&gt;To start of, we will create a new Jekyll site in the folder you just created,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new Desktop/fox_eternity
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you have any errors, make sure you have bundler installed, and that if you are on Windows, you are using the Ruby Terminal. On Mac, you might also have to write “sudo” before you execute the command.&lt;/p&gt;
+
+&lt;p&gt;Next, we will create a new folder in the root directory, called “admin”. Inside this folder, you will place two files, and these are the ones that will make Netlify CMS work. The first file we will create is index.html , the code will be the following&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=device-width, initial-scale=1.0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Content Manager&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Include the script that builds the page and powers Netlify CMS --&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next, we need a config.yml file. This file is where you will create new fields, fields are the tabs where you can add or edit your content.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;backend:
+
+  name: git-gateway
+
+  repo: Barsnes/fox_eternity
+
+  branch: master
+
+media_folder: &quot;assets/uploads&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Where it says “repo”, you will need to put you own github repo url, so if your github username is “Jekyll”, and your repository name is “website”, you link will be “Jekyll/website”.&lt;/p&gt;
+
+&lt;p&gt;You media_folder, is where all the pictures you upload will be stored. In my case, I will create a new folder in my root directory, named “assets”, and then another folder inside named “uploads”.&lt;/p&gt;
+
+&lt;p&gt;Next, we will be creating a way for us to login using Netlify, to use the login, you would need to deploy your site to Netlify. Simply go to &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify’s website&lt;/a&gt;, create a user using Github, and add your repo using the “Add new site from Git” button. Next, choose the correct repository that you want to be published, and add the correct build commands if Netlify does not automatically do this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_assets/images/screen-shot-2018-09-08-at-11.21.16.png&quot; alt=&quot;Build commands in Netlify dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can always change these build commands later, if you have any typos. Next, navigate over to the Identity tab on the dashboard of you newly added site. Here, you will need to press “Enable Identity”, and then we will only need to add a small bit of code to our website.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_assets/images/screen-shot-2018-09-08-at-11.39.06.png&quot; alt=&quot;Enable Identity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to the settings and usage of Identity, and scroll until you find the subheading “Registration”. I will enable Invite-Only, this will make sure that anyone who does not have the login information for your website, will not be able to create an account and edit your content. We will need to add one line of code in the head tag of both you index file, and your index file of your admin/index.html file.&lt;/p&gt;
+
+&lt;p&gt;Before I do this, I will create a folder in my subdirectory named “_includes”, so I can easily have the same footer and header on all my pages. Inside this folder, I will add a new file named “header.html”, and I will add the following code&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Fox Eternity - Using Netlify and Jekyll to build a website&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/css/master.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Netlify Identity --&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://identity.netlify.com/v1/netlify-identity-widget.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You have to make sure you include the Netlify Identity script, as this is what makes your login work.&lt;/p&gt;</content><author><name>Tobias Barsnes</name></author><summary type="html">Some months ago I looked into creating a website for my esports team. So, I searched up the best methods of doing it, and most articles told me to use Wordpress, well I did not want to do that, as I wanted to have control over everything, and for free. I had been using Netlify and github to host a test site I created with my friend. We were really happy with how their services worked, but wanted to be able to change things in a simple dashboard, and not having to code everything, bit by bit. The answer was right in front of us, to use Jekyll and Netlify CMS. You can find the finished code for this tutorial in this github repo, and contact me if you have any further questions.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://source.unsplash.com/1920x1080" /></entry></feed>

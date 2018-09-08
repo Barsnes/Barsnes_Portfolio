@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Barsnes Using Netlify and Jekyll to build a blog</title>
+  <title>Barsnes Using Netlify and Jekyll to build a website</title>
   <link REL="SHORTCUT ICON" HREF="/_assets/logo/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that takes stunning photographs and makes fantastic graphics." />
@@ -54,19 +54,130 @@
   <img src="https://source.unsplash.com/1920x1080" alt="" og:image></img>
 
 
-  <h1>Using Netlify and Jekyll to build a blog</h1>
+  <h1>Using Netlify and Jekyll to build a website</h1>
   <h5 style="font-size:.9em; color:#FFF; letter-spacing:1px">Written by Tobias Barsnes</h5>
   <h5>August 18, 2018</h5>
   <hr>
-<p>Last week I traveled to New York. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="article_content">
+
+    <p>Some months ago I looked into creating a website for my esports team. So, I searched up the best methods of doing it, and most articles told me to use Wordpress, well I did not want to do that, as I wanted to have control over everything, and for free. I had been using <a href="https://www.netlify.com/">Netlify</a> and github to host a <a href="https://findingfutures.eu">test site</a> I created with my friend. We were really happy with how their services worked, but wanted to be able to change things in a simple dashboard, and not having to code everything, bit by bit. The answer was right in front of us, to use Jekyll and Netlify CMS. You can find the finished code for this tutorial in <a href="https://github.com/Barsnes/fox_eternity">this github repo</a>, and contact me if you have any further questions.</p>
+
+<h2 id="what-can-you-do-with-jekyll-and-netlify-cms">What can you do with Jekyll and Netlify CMS?</h2>
+
+<p>Well, good question, it’s actually a quite simple one to answer. Jekyll is a static site builder, meaning that it will take different files, typically markdown or html, and put them together in one html file. This is useful for a single, or multi-page website, such as a blog or a portfolio. Using this with Netlify CMS (Content Management System), will make it easy to push any type of content to your website. It is kind of like baking a cake, you need</p>
+
+<p>I will not be covering how to install Jekyll, but I will be showing you how to install, and use Netlify CMS. If you have any further questions, you can either go to the <a href="https://jekyllrb.com/docs/">Jekyll docs</a>, <a href="https://www.netlifycms.org/">Netlify CMS docs</a>, or contact me.</p>
+
+<h2 id="deploying-your-site-with-netlify">Deploying your site with Netlify</h2>
+
+<p>To use Netlify’s awesome CMS, you will need to host your website using their platform, and to implement their <a href="https://www.netlify.com/docs/identity/">Identity</a>. Identity will let you have a log in method to you CMS dashboard, and even have 5 invite only users, for free!</p>
+
+<p>We will start of by creating a new folder on our computer, with your fresh Jekyll website. I am using MacOS, but I will be showing both commands for installing and creating the Jekyll setup. Start by opening your terminal or Ruby terminal, then creating a new folder somewhere on your computer, and type the following commands;</p>
+
+<p>To start of, we will create a new Jekyll site in the folder you just created,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new Desktop/fox_eternity
+</code></pre></div></div>
+
+<p>If you have any errors, make sure you have bundler installed, and that if you are on Windows, you are using the Ruby Terminal. On Mac, you might also have to write “sudo” before you execute the command.</p>
+
+<p>Next, we will create a new folder in the root directory, called “admin”. Inside this folder, you will place two files, and these are the ones that will make Netlify CMS work. The first file we will create is index.html , the code will be the following</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!doctype html&gt;</span>
+
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;title&gt;</span>Content Manager<span class="nt">&lt;/title&gt;</span>
+
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+
+  <span class="c">&lt;!-- Include the script that builds the page and powers Netlify CMS --&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Next, we need a config.yml file. This file is where you will create new fields, fields are the tabs where you can add or edit your content.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>backend:
+
+  name: git-gateway
+
+  repo: Barsnes/fox_eternity
+
+  branch: master
+
+media_folder: "assets/uploads"
+</code></pre></div></div>
+
+<p>Where it says “repo”, you will need to put you own github repo url, so if your github username is “Jekyll”, and your repository name is “website”, you link will be “Jekyll/website”.</p>
+
+<p>You media_folder, is where all the pictures you upload will be stored. In my case, I will create a new folder in my root directory, named “assets”, and then another folder inside named “uploads”.</p>
+
+<p>Next, we will be creating a way for us to login using Netlify, to use the login, you would need to deploy your site to Netlify. Simply go to <a href="https://www.netlify.com/">Netlify’s website</a>, create a user using Github, and add your repo using the “Add new site from Git” button. Next, choose the correct repository that you want to be published, and add the correct build commands if Netlify does not automatically do this.</p>
+
+<p><img src="/_assets/images/screen-shot-2018-09-08-at-11.21.16.png" alt="Build commands in Netlify dashboard" /></p>
+
+<p>You can always change these build commands later, if you have any typos. Next, navigate over to the Identity tab on the dashboard of you newly added site. Here, you will need to press “Enable Identity”, and then we will only need to add a small bit of code to our website.</p>
+
+<p><img src="/_assets/images/screen-shot-2018-09-08-at-11.39.06.png" alt="Enable Identity" /></p>
+
+<p>Go to the settings and usage of Identity, and scroll until you find the subheading “Registration”. I will enable Invite-Only, this will make sure that anyone who does not have the login information for your website, will not be able to create an account and edit your content. We will need to add one line of code in the head tag of both you index file, and your index file of your admin/index.html file.</p>
+
+<p>Before I do this, I will create a folder in my subdirectory named “_includes”, so I can easily have the same footer and header on all my pages. Inside this folder, I will add a new file named “header.html”, and I will add the following code</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;head&gt;</span>
+
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;title&gt;</span>Fox Eternity - Using Netlify and Jekyll to build a website<span class="nt">&lt;/title&gt;</span>
+
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/master.css"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Netlify Identity --&gt;</span>
+
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://identity.netlify.com/v1/netlify-identity-widget.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+</code></pre></div></div>
+
+<p>You have to make sure you include the Netlify Identity script, as this is what makes your login work.</p>
 
 
+  </div>
 </div>
 
 <style>
 
   body {
     background-color: #323232
+  }
+
+  .highlighter-rouge {
+    overflow: auto;
+    background-color: #222222;
+    padding: 1rem;
+    box-shadow: inside 0 0 10px #000;
+    border: solid #ddd 2px;
+    border-radius: 5px;
+    margin: 1rem auto;
   }
 
   .article {
@@ -84,13 +195,20 @@
     box-shadow: 0 0 30px #00000070
   }
 
+  .article_content img {
+    width: 60%;
+    margin: 1em auto;
+    display: block;
+    box-shadow: 0 0 30px #00000070
+  }
+
   .article p {
     font-family: "Lato";
     padding-top: 1em;
   }
 
   .article a {
-    color: #F8B52A;
+    color: lightblue;
     text-decoration: none
   }
 
@@ -100,9 +218,14 @@
 
   .article h5 {
     font-family: "Lato";
-    padding: .5em 0;
+    padding: .2em 0;
     margin: 0 .1rem;
     color: lightblue;
+    text-align: right;
+  }
+
+  .article h2 {
+    padding-top: 1em;
   }
 
 @media (max-width:1050px) {
