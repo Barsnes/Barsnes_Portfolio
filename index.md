@@ -1,6 +1,6 @@
 ---
 layout: index
-about_title: About Me
+about_title: Who I am
 ---
 I am a 17 year old boy from Norway, that loves doing photography, design and
 coding! Photoshop and Illustrator are my strongest assets, but when I have the
