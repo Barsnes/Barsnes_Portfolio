@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barsnes Contact</title>
+  <link REL="SHORTCUT ICON" HREF="/_assets/logo/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that has a passion for stunning graphics, beautiful photgraphs and eye-catching cinematography. Click to view Tobias' portfolio!" />
+  <meta name="keywords" content="barsnes, tobias barsnes"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/_assets/css/master.css">
+  <link href="/_assets/css/fontawesome/css/all.css" rel="stylesheet">
+  <!-- Netlify Identity -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Cookies Consent -->
+  <link rel="stylesheet" type="text/css" href="_assets/css/cookies.css"/>
+  <!-- Jquery -->
+  <script src="/_assets/js/jquery.js"></script>
+  <!-- Google  -->
+  <meta name="google-site-verification" content="1Uzpi4sY6CTW4W1M3I7xPBIpJFBeuzXm51yETIOOf30" />
+</head>
+
+
+
+<body>
+
+<div class="header">
+    <a href="/index"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul class="menulist navlist">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+
+<!-- Hamburger Menu -->
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu').click(function(){
+          $('.menulist').toggleClass('active')
+          $('.menulist').toggleClass('navlist')
+          $('i').toggleClass('notactive');
+        })
+      })
+  </script>
+
+
+<div class="container">
+  <h1 class="title title-cta">Want to contact me? </h1>
+<form name="contact" netlify-honeypot="bot-field" method="POST" action="thank-you" data-netlify="true" netlify>
+  <p class="hidden">
+  <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
+  <input type="text" name="name" placeholder="Full Name" class="name">
+  <input type="email" name="email" placeholder="Email" class="email">
+  <textarea name="message" placeholder="Type a detailed message..." class="message"></textarea>
+   <div class="captcha" data-netlify-recaptcha></div>
+  <button class="button_dark" type="submit">Send</button>
+</form>
+</div>
+
+<style media="screen">
+
+  .hidden {
+    position: absolute;
+    z-index: -1000;
+    right: -10000em
+  }
+
+  .container {
+    margin: 1.5rem;
+    text-align: center;
+    min-height: calc(100vh - 10.8rem)
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+  }
+
+  .name {
+    grid-column: 2 / 3;
+  }
+
+  .email {
+    grid-column: 4 / 5;
+  }
+
+  input {
+    margin: .5rem;
+    padding: .5rem;
+    border: none;
+    border-bottom: 2px solid lightblue;
+    background-color: #00000000;
+    color: #FFF;
+  }
+
+  textarea {
+    grid-column: 2 / 5;
+    margin: .5rem;
+    min-height: 10rem;
+    border: 2px solid lightblue;
+    padding: .5rem;
+    background: #00000000;
+    color: #FFF;
+  }
+
+ .button_dark {
+   grid-column: 3 / 4;
+   background-color: #00000000;
+   color: #FFF;
+   padding: 1rem 3rem;
+   border: 2px solid lightblue;
+   transition: all ease-in-out 300ms;
+ }
+
+ .captcha {
+   grid-column: 3 / 4;
+   margin: .5rem
+ }
+
+ .button_dark:hover {
+   background-color: white;
+   color: lightblue;
+   cursor: pointer;
+ }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+}
+
+</style>
+
+
+<div class="footer">
+
+  <h1>Copyright © 2018 Tobias Barsnes All Rights Reserved.</h1>
+
+</div>
+
+<!-- Smooth Scroll -->
+
+  <script>
+   $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1200, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+</body>
+
