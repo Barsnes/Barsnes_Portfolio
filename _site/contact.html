@@ -62,6 +62,9 @@
    <div class="captcha" data-netlify-recaptcha></div>
   <button class="button_dark" type="submit">Send</button>
 </form>
+<hr>
+<h2>I am looking forward to hearing from you!</h2>
+<img src="_assets/images/contact.jpg" alt="">
 </div>
 
 <style media="screen">
@@ -74,17 +77,36 @@
     width: 0;
   }
 
+  .container hr {
+    border: .5px solid #EF6034;
+    grid-column: 3 / 4;
+    margin: 2rem auto;
+    width: 20%
+  }
+
+  .container img {
+    grid-column: 2 / 5;
+    width: 30%;
+    margin: 3rem auto 1rem auto;
+  }
+
+  .container h2 {
+    margin: 1rem auto;
+    font-size: 1.7rem;
+    font-family: Lato
+  }
+
   .container {
     margin: 1.5rem;
     text-align: center;
     min-height: calc(100vh - 10.8rem);
-    background-color: #232323;
+    background-color: #0D1321;
     z-index: 1
   }
 
   form {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 10% 3fr 1fr;
   }
 
   .name {
@@ -99,7 +121,7 @@
     margin: .5rem;
     padding: .5rem;
     border: none;
-    border-bottom: 2px solid lightblue;
+    border-bottom: 2px solid #EF6034;
     background-color: #00000000;
     color: #FFF;
   }
@@ -108,7 +130,7 @@
     grid-column: 2 / 5;
     margin: .5rem;
     min-height: 10rem;
-    border: 2px solid lightblue;
+    border: 2px solid #EF6034;
     padding: .5rem;
     background: #00000000;
     color: #FFF;
@@ -119,7 +141,7 @@
    background-color: #00000000;
    color: #FFF;
    padding: 1rem 3rem;
-   border: 2px solid lightblue;
+   border: 2px solid #EF6034;
    transition: all ease-in-out 300ms;
  }
 
@@ -130,7 +152,7 @@
 
  .button_dark:hover {
    background-color: white;
-   color: lightblue;
+   color: #EF6034;
    cursor: pointer;
  }
 
@@ -161,6 +183,7 @@
 
  .button_dark {
    grid-column: 1 / 2;
+   margin: .5rem;
  }
 
  .captcha {

@@ -2,9 +2,9 @@
 layout: standard
 title: Portfolio
 ---
-<div id="#photographs" class="image_list">
+<div class="image_list">
 {% for image in site.images %}
-<div class="image_container hover">
+<div class="image_container">
     <img src="{{ image.imageurl }}" alt="{{ image.description }}">
     <div class="image_description">
       <div class="image_contents">
@@ -17,7 +17,7 @@ title: Portfolio
 {% endfor %}
 
 {% for image in site.graphics %}
-<div class="image_container hover">
+<div class="image_container">
     <img src="{{ image.imageurl }}" alt="{{ image.description }}">
     <div class="image_description">
       <div class="image_contents">

@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-  background-color: #232323;
+  background-color: #0D1321;
   position: relative;
 }
 
@@ -60,7 +60,7 @@ a {
 .blog__list {
   position: relative;
   width: 100%;
-  background-color: #232323
+  background-color: #0D1321
 }
 
 .blog__link:nth-of-type(odd) {
@@ -119,7 +119,7 @@ a {
   width: 100%;
   font-family: "Lato";
   text-decoration: none;
-  background-color: lightblue;
+  background-color: #EF6034;
   width: 100%;
   color: #FFF;
   display: grid;
@@ -194,7 +194,7 @@ a:-webkit-any-link {
 .portfolio {
   height: auto;
   width: 100%;
-  background-color: #A55;
+  background-color: #4E598C;
   text-align: center;
   margin: 0;
 }
@@ -225,7 +225,7 @@ a:-webkit-any-link {
   -moz-column-gap:      0px;
   column-count:         3;
   column-gap:           0px;
-  background-color: #A55;
+  background-color: #4E598C;
   min-height: 100vh;
 }
 
@@ -287,7 +287,7 @@ a:-webkit-any-link {
 }
 
 .footer {
-  background-color: #232323;
+  background-color: #0D1321;
   text-align: left;
   font-size: .4rem;
   padding: 2rem;
@@ -300,14 +300,20 @@ a:-webkit-any-link {
 .about {
   width: auto;
   text-align: center;
-  background-color: #10aded;
+  background-color: #FFEDDF;
   margin: 0;
-  padding: 1rem;
+  padding: 0 1rem;
+  color: #0D1321;
+}
+
+.about h1 {
+  padding: 1.5rem 0 0 0;
+  font-size: 2.5rem
 }
 
 .about_content {
-  width: 70%;
-  margin: 1.5em 15%;
+  width: 50%;
+  margin: 1.5em 25%;
   text-align: left;
   font-family: "Lato"
 }
@@ -353,7 +359,7 @@ a:-webkit-any-link {
   .blog__list {
     position: relative;
     width: 100%;
-    background-color: #232323
+    background-color: #0D1321
   }
 
   .blog__link:nth-child(1) {
@@ -382,7 +388,7 @@ a:-webkit-any-link {
     width: 100%;
     font-family: "Lato";
     text-decoration: none;
-    background-color: lightblue;
+    background-color: #EF6034;
     width: 100%;
     color: #FFF;
     display: grid;
@@ -408,7 +414,7 @@ a:-webkit-any-link {
     z-index: 100;
     width: 100%;
     text-align: center;
-    background-color: lightblue
+    background-color: #EF6034
   }
 
   .active li {
