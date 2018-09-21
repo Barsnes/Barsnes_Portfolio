@@ -17,6 +17,7 @@ collections:
   - images
   - graphics
   - posts
+  - websites
 
 defaults:
   -

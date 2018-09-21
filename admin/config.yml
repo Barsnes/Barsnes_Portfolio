@@ -48,6 +48,18 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
 
+  - name: "website" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Websites" # Used in the UI, ie.: "New Post"
+    folder: "_websites" # The path to the folder where the documents are stored
+    sort: "date:asc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
     delete: false
