@@ -106,15 +106,15 @@
 
   form {
     display: grid;
-    grid-template-columns: 1fr 3fr 10% 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 10% 1fr 3fr 1fr;
   }
 
   .name {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
   }
 
   .email {
-    grid-column: 4 / 5;
+    grid-column: 5 / 7;
   }
 
   input {
@@ -127,7 +127,7 @@
   }
 
   textarea {
-    grid-column: 2 / 5;
+    grid-column: 2 / 7;
     margin: .5rem;
     min-height: 10rem;
     border: 2px solid #EF6034;
@@ -137,17 +137,17 @@
   }
 
  .button_dark {
-   grid-column: 3 / 4;
+   grid-column: 4 / 5;
    background-color: #00000000;
    color: #FFF;
-   padding: 1rem 3rem;
+   padding: 1rem 2rem;
    border: 2px solid #EF6034;
    transition: all ease-in-out 300ms;
  }
 
  .captcha {
-   grid-column: 3 / 4;
-   margin: .5rem
+   grid-column: 3 / 5;
+   margin: .5rem auto;
  }
 
  .button_dark:hover {
