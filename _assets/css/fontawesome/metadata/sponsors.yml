@@ -68,6 +68,11 @@ bity:
     - bity
   label: Bity
   url: 'http://bity.com'
+blackpulp-designs:
+  icons:
+    - pray
+  label: Blackpulp Designs
+  url: 'https://www.blackpulp.com'
 blissbook:
   icons:
     - pen-fancy
@@ -474,6 +479,11 @@ rocket-chat:
     - video-slash
   label: Rocket.Chat
   url: 'https://rocket.chat'
+rodney-oliver:
+  icons:
+    - folder-minus
+    - folder-plus
+  label: Rodney Oliver
 schlix:
   icons:
     - schlix
@@ -570,9 +580,43 @@ studio-vinari:
   url: 'https://studiovinari.com'
 supple:
   icons:
+    - ad
+    - analytics
+    - badge-check
+    - badge-dollar
+    - badge-percent
+    - bullhorn
+    - bullseye
+    - bullseye-arrow
+    - bullseye-pointer
+    - comment-alt-dollar
+    - comment-dollar
+    - comments-alt-dollar
+    - comments-dollar
+    - envelope-open-dollar
+    - envelope-open-text
+    - funnel-dollar
+    - gift-card
+    - lightbulb-dollar
+    - lightbulb-exclamation
+    - lightbulb-on
+    - lightbulb-slash
+    - mail-bulk
+    - megaphone
+    - poll
+    - poll-h
+    - search-dollar
+    - search-location
     - supple
+    - user-crown
+    - users-crown
   label: Supple
   url: 'https://supple.com.au'
+the-red-yeti:
+  icons:
+    - the-red-yeti
+  label: The Red Yeti
+  url: 'http://theredyeti.com'
 the-us-sunnah-foundation:
   icons:
     - book-heart
@@ -639,8 +683,8 @@ via:
     - draw-polygon
     - draw-square
     - layer-group
-    - layers-minus
-    - layers-plus
+    - layer-minus
+    - layer-plus
   label: VIA Traffic Software Solutions
   url: 'https://www.via.software'
 vnv:
