@@ -1,6 +1,10 @@
 ---
 layout: index
-about_title: Who I am
+about:
+    about_title: Who I am
+snapchat:
+    uses: 1.2M
+    views: 19.1M
 ---
 I am a 17 year old boy from Norway, that loves doing photography, design and
 coding! Photoshop and Illustrator are my strongest assets, but when I have the

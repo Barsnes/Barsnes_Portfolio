@@ -67,6 +67,19 @@
   </div>
 </div>
 
+<div class="stats">
+    <h1>Geofilter Stats</h1>
+  <div class="snapchat_uses">
+      <h2>Uses</h2>
+      <h3>1.2M</h3>
+  </div>
+
+  <div class="snapchat_views">
+    <h2>Views</h2>
+      <h3>19.1M</h3>
+  </div>
+
+</div>
 
 <div class="blog__list">
 
@@ -216,6 +229,26 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
     font-size: 2rem;
     padding: .5rem;
     font-family: Lato
+  }
+
+  .stats {
+    display: grid;
+    height: 15rem;
+    text-align: center;
+    grid-template-columns: repeat(1fr, 5);
+    padding: 2rem
+  }
+
+  .stats h1 {
+    grid-column: 1 / 6
+  }
+
+  .snapchat_uses {
+    grid-column: 2 / 3;
+  }
+
+  .snapchat_views {
+    grid-column: 4 / 5;
   }
 
   @media (max-width: 800px) {

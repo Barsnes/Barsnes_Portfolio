@@ -244,9 +244,11 @@ audio-video:
     - undo
     - undo-alt
     - video
+    - volume
     - volume-down
     - volume-mute
     - volume-off
+    - volume-slash
     - volume-up
     - youtube
   label: Audio & Video
@@ -300,13 +302,19 @@ buildings:
   icons:
     - building
     - church
+    - gopuram
     - home
     - hospital
     - hospital-alt
     - industry
     - industry-alt
+    - mosque
+    - place-of-worship
     - school
+    - synagogue
+    - torii-gate
     - university
+    - vihara
   label: Buildings
 business:
   icons:
@@ -315,6 +323,8 @@ business:
     - archive
     - badge
     - badge-check
+    - badge-dollar
+    - badge-percent
     - balance-scale
     - balance-scale-left
     - balance-scale-right
@@ -324,6 +334,8 @@ business:
     - building
     - bullhorn
     - bullseye
+    - business-time
+    - cabinet-filing
     - calculator
     - calendar
     - calendar-alt
@@ -331,7 +343,10 @@ business:
     - chart-area
     - chart-bar
     - chart-line
+    - chart-line-down
     - chart-pie
+    - chart-pie-alt
+    - city
     - clipboard
     - coffee
     - columns
@@ -347,14 +362,25 @@ business:
     - fax
     - file
     - file-alt
+    - file-chart-line
+    - file-chart-pie
+    - file-spreadsheet
+    - file-user
     - folder
+    - folder-minus
     - folder-open
+    - folder-plus
+    - folder-times
+    - folders
     - glasses
     - globe
     - highlighter
     - industry
     - industry-alt
+    - keynote
+    - landmark
     - marker
+    - mind-share
     - paperclip
     - paste
     - pen
@@ -366,22 +392,29 @@ business:
     - pencil-alt
     - percent
     - phone
+    - phone-office
     - phone-slash
     - phone-square
     - phone-volume
+    - podium
+    - presentation
+    - print
+    - print-slash
     - project-diagram
     - registered
     - save
+    - shredder
     - sitemap
+    - socks
     - sticky-note
     - stream
-    - suitcase
     - table
     - tag
     - tags
     - tasks
     - thumbtack
     - trademark
+    - user-chart
     - wallet
   label: Business
 charity:
@@ -592,6 +625,7 @@ currency:
     - bitcoin
     - btc
     - dollar-sign
+    - ethereum
     - euro-sign
     - gg
     - gg-circle
@@ -1087,6 +1121,16 @@ interfaces:
     - sign-out
     - sign-out-alt
     - signal
+    - signal-1
+    - signal-2
+    - signal-3
+    - signal-4
+    - signal-alt
+    - signal-alt-1
+    - signal-alt-2
+    - signal-alt-3
+    - signal-alt-slash
+    - signal-slash
     - sitemap
     - sliders-h
     - sliders-h-square
@@ -1126,7 +1170,16 @@ interfaces:
     - user
     - user-alt
     - user-circle
+    - volume
+    - volume-down
+    - volume-mute
+    - volume-off
+    - volume-slash
+    - volume-up
     - wifi
+    - wifi-1
+    - wifi-2
+    - wifi-slash
     - wrench
   label: Interfaces
 logistics:
@@ -1221,6 +1274,7 @@ maps:
     - info-circle
     - info-square
     - key
+    - landmark
     - layer-group
     - layer-minus
     - layer-plus
@@ -1321,21 +1375,74 @@ maps:
     - wine-glass
     - wrench
   label: Maps
+marketing:
+  icons:
+    - ad
+    - analytics
+    - badge
+    - badge-check
+    - badge-dollar
+    - badge-percent
+    - bullhorn
+    - bullseye
+    - bullseye-arrow
+    - bullseye-pointer
+    - comment-alt-dollar
+    - comment-dollar
+    - comments-alt-dollar
+    - comments-dollar
+    - envelope-open-dollar
+    - envelope-open-text
+    - funnel-dollar
+    - gift-card
+    - lightbulb
+    - lightbulb-dollar
+    - lightbulb-exclamation
+    - lightbulb-on
+    - lightbulb-slash
+    - mail-bulk
+    - megaphone
+    - poll
+    - poll-h
+    - search-dollar
+    - search-location
+    - user-crown
+    - users-crown
+  label: Marketing
 mathematics:
   icons:
+    - abacus
+    - calculator
+    - calculator-alt
     - divide
+    - empty-set
     - equals
+    - function
     - greater-than
     - greater-than-equal
+    - infinity
+    - integral
+    - intersection
+    - lambda
     - less-than
     - less-than-equal
     - minus
     - not-equal
+    - omega
     - percentage
+    - pi
     - plus
+    - sigma
+    - square-root
+    - square-root-alt
     - subscript
     - superscript
+    - tally
+    - theta
+    - tilde
     - times
+    - union
+    - value-absolute
   label: Mathematics
 medical:
   icons:
@@ -1659,11 +1766,15 @@ objects:
   label: Objects
 payments-shopping:
   icons:
+    - alipay
     - amazon-pay
     - apple-pay
     - badge
+    - badge-check
     - bell
+    - bitcoin
     - bookmark
+    - btc
     - bullhorn
     - camera
     - camera-alt
@@ -1708,6 +1819,39 @@ payments-shopping:
     - trophy
     - trophy-alt
   label: Payments & Shopping
+religion:
+  icons:
+    - ankh
+    - atom
+    - bible
+    - church
+    - cross
+    - dharmachakra
+    - dove
+    - gopuram
+    - hamsa
+    - haykal
+    - jedi
+    - journal-whills
+    - kaaba
+    - khanda
+    - menorah
+    - mosque
+    - om
+    - pastafarianism
+    - peace
+    - place-of-worship
+    - pray
+    - praying-hands
+    - quran
+    - star-and-crescent
+    - star-of-david
+    - synagogue
+    - torah
+    - torii-gate
+    - vihara
+    - yin-yang
+  label: Religion
 shapes:
   icons:
     - badge
@@ -1796,6 +1940,8 @@ status:
     - battery-slash
     - battery-three-quarters
     - bell
+    - bell-school
+    - bell-school-slash
     - bell-slash
     - calendar
     - calendar-alt
@@ -1807,6 +1953,12 @@ status:
     - calendar-times
     - cart-arrow-down
     - cart-plus
+    - comment
+    - comment-alt
+    - comment-alt-slash
+    - comment-slash
+    - compass
+    - compass-slash
     - door-closed
     - door-open
     - exclamation
@@ -1825,23 +1977,45 @@ status:
     - file-times
     - folder
     - folder-open
+    - gas-pump
+    - gas-pump-slash
     - info
     - info-circle
     - info-square
+    - lightbulb
+    - lightbulb-slash
+    - location
+    - location-slash
     - lock
     - lock-alt
     - lock-open
     - lock-open-alt
+    - map-marker
+    - map-marker-alt
+    - map-marker-alt-slash
+    - map-marker-slash
+    - microphone
+    - microphone-alt
+    - microphone-alt-slash
+    - microphone-slash
     - minus
     - minus-circle
     - minus-hexagon
     - minus-octagon
     - minus-square
+    - parking
+    - parking-circle
+    - parking-circle-slash
+    - parking-slash
+    - phone
+    - phone-slash
     - plus
     - plus-circle
     - plus-hexagon
     - plus-octagon
     - plus-square
+    - print
+    - print-slash
     - question
     - question-circle
     - question-square
@@ -1853,6 +2027,21 @@ status:
     - sign-in-alt
     - sign-out
     - sign-out-alt
+    - signal
+    - signal-1
+    - signal-2
+    - signal-3
+    - signal-4
+    - signal-alt
+    - signal-alt-1
+    - signal-alt-2
+    - signal-alt-3
+    - signal-alt-slash
+    - signal-slash
+    - smoking-ban
+    - star
+    - star-half
+    - star-half-alt
     - stream
     - thermometer-empty
     - thermometer-full
@@ -1861,10 +2050,28 @@ status:
     - thermometer-three-quarters
     - thumbs-down
     - thumbs-up
+    - tint
+    - tint-slash
     - toggle-off
     - toggle-on
     - unlock
     - unlock-alt
+    - user
+    - user-alt
+    - user-alt-slash
+    - user-slash
+    - video
+    - video-slash
+    - volume
+    - volume-down
+    - volume-mute
+    - volume-off
+    - volume-slash
+    - volume-up
+    - wifi
+    - wifi-1
+    - wifi-2
+    - wifi-slash
   label: Status
 travel:
   icons:

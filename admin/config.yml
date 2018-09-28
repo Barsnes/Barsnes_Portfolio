@@ -64,12 +64,22 @@ collections:
     label: "About" # Used in the UI, ie.: "New Post"
     delete: false
     files: # The path to the folder where the documents are stored
-      - label: "About"
-        name: "about"
-        slug: "about"
+      - label: "Homepage"
+        name: "index"
+        slug: "index"
         file: "index.md"
         delete: false
         fields: # The fields each document in this collection have
           - {label: "Layout", name: "layout", default: "index", widget: "hidden"}
-          - {label: "Title", name: "about_title", widget: "string"}
-          - {label: "Content", name: "body", widget: "markdown"}
+          - label: "Snapchat"
+            name: "snapchat"
+            widget: "object"
+            fields:
+              - {label: "Views", name: "uses", widget: "string"}
+              - {label: "Uses", name: "views", widget: "string"}
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "about_title", widget: "string"}
+              - {label: "Content", name: "body", widget: "markdown"}
