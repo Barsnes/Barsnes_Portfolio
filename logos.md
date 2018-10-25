@@ -4,7 +4,7 @@ title: Graphics
 ---
 
 <div class="image_list">
-{% for image in site.graphics %}
+{% for image in site.logos %}
 <div class="image_container">
     <img src="{{ image.imageurl }}" alt="{{ image.description }}">
     <div class="image_description">

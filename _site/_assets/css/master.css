@@ -226,7 +226,6 @@ a:-webkit-any-link {
   column-count:         3;
   column-gap:           0px;
   background-color: #4E598C;
-  min-height: 100vh;
 }
 
 .image_container {

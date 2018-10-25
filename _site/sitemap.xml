@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2018/08/using-netlify-and-jekyll-to-build-a-website.html</loc>
+<loc>http://localhost:4001/2018/08/using-netlify-and-jekyll-to-build-a-website.html</loc>
 <lastmod>2018-08-18T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/contact.html</loc>
+<loc>http://localhost:4001/contact.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/graphics.html</loc>
+<loc>http://localhost:4001/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://localhost:4001/logos.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/photographs.html</loc>
+<loc>http://localhost:4001/photographs.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/portfolio.html</loc>
+<loc>http://localhost:4001/portfolio.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/thank-you.html</loc>
+<loc>http://localhost:4001/thank-you.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/_assets/logo/logo.pdf</loc>
+<loc>http://localhost:4001/_assets/logo/logo.pdf</loc>
 <lastmod>2018-09-27T23:34:15-05:00</lastmod>
 </url>
 </urlset>

@@ -3,18 +3,24 @@ layout: standard
 title: Portfolio
 ---
 
-<div class="specialities">
-  <h1>What I do</h1>
-  <a href="#photographs"><h2>Photographs</h2></a>
-  <a href="#graphics"><h2>Graphics</h2></a>
-  <a href="#websites"><h2>Websites</h2></a>
-  <a href="#graphics"><h2>Logo Design</h2></a>
-
-  <img src="_assets/images/whatido.jpg" alt="Tobias Barsnes">
-</div>
-
-
 <div class="portfolio" id="portfolio">
+
+  <a href="logos"><h1><i class="fal fa-object-group"></i> Logos</h1></a>
+
+  <div id="graphics" class="image_list">
+{% for graphic in site.logos limit:6 %}
+  <div class="image_container hover">
+      <img src="{{ graphic.imageurl }}" alt="{{ graphic.description }}">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>{{ graphic.title }}</h1>
+            <hr>
+          <a href="graphics"><h3>See more logos</h3></a>
+        </div>
+      </div>
+  </div>
+{% endfor %}
+</div>
   <a href="photographs"><h1><i class="fal fa-camera-retro"></i> Photographs</h1></a>
 
   <div id="#photographs" class="image_list">
@@ -49,34 +55,3 @@ title: Portfolio
 {% endfor %}
   </div>
 </div>
-
-<style media="screen">
-
-  .specialities {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 1rem 5rem;
-    text-align: center;
-  }
-
-  .specialities h1 {
-    grid-column: 1 / 5;
-    margin: 2rem auto;
-  }
-
-  .specialities a {
-    grid-column: span 1;
-    text-decoration: none;
-    color: #fff;
-    font-family: Lato;
-    padding: 2.7rem;
-    margin: 1rem auto;
-  }
-
-  .specialities img {
-    grid-column: 2 / 4;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-</style>

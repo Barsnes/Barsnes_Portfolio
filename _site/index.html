@@ -61,114 +61,93 @@
 
   <div class="landing_content">
 
-    <h1>Tobias Barsnes</h1>
-    <h2>Portfolio</h2>
-
-  </div>
-</div>
-
-<div class="stats">
-    <h1>Geofilter Stats</h1>
-  <div class="snapchat_uses">
-      <h2>Uses</h2>
-      <h3>1.2M</h3>
-  </div>
-
-  <div class="snapchat_views">
-    <h2>Views</h2>
-      <h3>19.1M</h3>
-  </div>
-
-</div>
-
-<div class="blog__list">
-
-  <h2>Recent Articles</h2>
-
-  
-
-    <a class="blog__link" href="/2018/08/using-netlify-and-jekyll-to-build-a-website.html">
-
-              <h1>Using Netlify and Jekyll to build a website</h1>
-              <img src="https://source.unsplash.com/1920x1080" alt="" class="blog__image">
-              <div class="blog__shadow"></div>
-
-    </a>
-
-  
-  </div>
-
-<div class="portfolio" id="portfolio">
-  <a href="portfolio"><h1>Some of my work</h1></a>
-
-  <div id="#photographs" class="image_list">
-
-  <div class="image_container hover">
-      <img src="/_assets/images/img_7528.jpg" alt="Picture of a BMW">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>BMW</h1>
-            <hr>
-          <a href="photographs"><h3>See more images</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container hover">
-      <img src="/_assets/images/img_9776.jpg" alt="Endre Stejde feeding a sheep">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Endre Stedje</h1>
-            <hr>
-          <a href="photographs"><h3>See more images</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container hover">
-      <img src="/_assets/images/wallet_floating.jpg" alt="A picture where the money is floating">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Floating Money</h1>
-            <hr>
-          <a href="photographs"><h3>See more images</h3></a>
-        </div>
-      </div>
-  </div>
+    <div class="slideshow-container">
 
 
-  <div class="image_container hover">
-      <img src="/_assets/images/logo2.png" alt="A logo for Barsnes Bryggeri">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Barsnes Bryggeri</h1>
-            <hr>
-          <a href="graphics"><h3>See more graphics</h3></a>
-        </div>
-      </div>
-  </div>
 
-  <div class="image_container hover">
-      <img src="/_assets/images/geo1.png" alt="A Snapchat geofilter for Bergen">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Bergen Geofilter</h1>
-            <hr>
-          <a href="graphics"><h3>See more graphics</h3></a>
-        </div>
-      </div>
-  </div>
+    <div class="mySlides fade">
+      <img src="/_assets/images/logo2.png" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
 
-  <div class="image_container hover">
-      <img src="/_assets/images/plakat_jail.png" alt="A concept poster for BRIX Energy Drink">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Concept Poster</h1>
-            <hr>
-          <a href="graphics"><h3>See more graphics</h3></a>
-        </div>
-      </div>
-  </div>
+    <span class="dot"></span>
+
+
+    <div class="mySlides fade">
+      <img src="/_assets/images/bird-mascot.png" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
+
+    <span class="dot"></span>
+
+
+    <div class="mySlides fade">
+      <img src="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
+
+    <span class="dot"></span>
+
+
+    <div class="mySlides fade">
+      <img src="/_assets/images/panda-mascot.png" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
+
+    <span class="dot"></span>
+
+
+    <div class="mySlides fade">
+      <img src="/_assets/images/planet_discovery.png" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
+
+    <span class="dot"></span>
+
+
+    <div class="mySlides fade">
+      <img src="/_assets/images/logo4.png" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
+
+    <span class="dot"></span>
+
+
+    </div>
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    <div class="landingText">
+        <h1>Tobias Barsnes</h1>
+        <h2>Portfolio</h2>
+    </div>
 
   </div>
 </div>
@@ -181,6 +160,104 @@ coding! Photoshop and Illustrator are my strongest assets, but when I have the
 camera at hand, I like to take photographs. Currently I am staying one year in the US, but in Norway I am studying Medium and Communication. I have a passion for great design, and will alway try to do my best!</p>
 
 <p><img src="/_assets/images/untitled-1.png" alt="Picture of Tobias Barsnes" /></p>
+
+  </div>
+</div>
+
+<div class="portfolio" id="portfolio">
+  <a href="portfolio"><h1>Some of my work</h1></a>
+
+  <div id="#portfolio" class="image_list">
+  
+    <div class="image_container hover">
+        <img src="/_assets/images/logo2.png" alt="A logo for Barsnes Bryggeri">
+        <div class="image_description">
+          <div class="image_contents">
+            <h1>Barsnes Bryggeri</h1>
+              <hr>
+            <a href="graphics"><h3>See more</h3></a>
+          </div>
+        </div>
+    </div>
+  
+    <div class="image_container hover">
+        <img src="/_assets/images/bird-mascot.png" alt="A bird mascot logo made by Tobias Barsnes">
+        <div class="image_description">
+          <div class="image_contents">
+            <h1>Bird Mascot Logo</h1>
+              <hr>
+            <a href="graphics"><h3>See more</h3></a>
+          </div>
+        </div>
+    </div>
+  
+    <div class="image_container hover">
+        <img src="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png" alt="A concept logo">
+        <div class="image_description">
+          <div class="image_contents">
+            <h1>Fox Eternity</h1>
+              <hr>
+            <a href="graphics"><h3>See more</h3></a>
+          </div>
+        </div>
+    </div>
+  
+    <div class="image_container hover">
+        <img src="/_assets/images/panda-mascot.png" alt="A panda mascot logo made by Tobias Barsnes">
+        <div class="image_description">
+          <div class="image_contents">
+            <h1>Panda Mascot Logo</h1>
+              <hr>
+            <a href="graphics"><h3>See more</h3></a>
+          </div>
+        </div>
+    </div>
+  
+
+
+  <div class="image_container hover">
+      <img src="/_assets/images/img_7528.jpg" alt="Picture of a BMW">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>BMW</h1>
+            <hr>
+          <a href="photographs"><h3>See more</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
+      <img src="/_assets/images/img_9776.jpg" alt="Endre Stejde feeding a sheep">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Endre Stedje</h1>
+            <hr>
+          <a href="photographs"><h3>See more</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
+      <img src="/_assets/images/wallet_floating.jpg" alt="A picture where the money is floating">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Floating Money</h1>
+            <hr>
+          <a href="photographs"><h3>See more</h3></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="image_container hover">
+      <img src="/_assets/images/tobias-barsnes-496300-unsplash.jpg" alt="A pictures of Sennheiser headphones">
+      <div class="image_description">
+        <div class="image_contents">
+          <h1>Headphones</h1>
+            <hr>
+          <a href="photographs"><h3>See more</h3></a>
+        </div>
+      </div>
+  </div>
 
   </div>
 </div>
@@ -203,7 +280,6 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
 <style media="screen">
 
   .landing {
-    background-image: url("_assets/images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -212,43 +288,30 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   }
 
   .landing_content {
-    background-color: #EF603460;
     width: 100%;
     height: 100%;
-    padding: 5rem;
-    text-shadow:  0 0 70px #00000070
+    padding: 5rem 2rem;
+    text-shadow:  0 0 70px #00000070;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem
   }
 
-  .landing_content h1 {
+  .landingText h1 {
     font-size: 4rem;
     padding: .5rem;
     margin-top: 3rem
   }
 
-  .landing_content h2 {
+  .landingText h2 {
     font-size: 2rem;
     padding: .5rem;
     font-family: Lato
   }
 
-  .stats {
-    display: grid;
-    height: 15rem;
-    text-align: center;
-    grid-template-columns: repeat(1fr, 5);
-    padding: 2rem
-  }
-
-  .stats h1 {
-    grid-column: 1 / 6
-  }
-
-  .snapchat_uses {
-    grid-column: 2 / 3;
-  }
-
-  .snapchat_views {
-    grid-column: 4 / 5;
+  .landingText {
+    grid-column: 2 /3
   }
 
   @media (max-width: 800px) {
@@ -257,14 +320,58 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
       text-align: center;
     }
 
-    .landing_content h1 {
+    .landing_content {
+      grid-template-columns: 1fr;
+    }
+
+    .slideshow-container {
+      display: none
+    }
+
+    .landingText h1 {
       font-size: 2rem;
     }
 
-    .landing_content h2 {
+    .landingText h2 {
       font-size: 1.5rem;
     }
   }
+
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 100%;
+    grid-column: 1 / 2;
+    margin: auto;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
 </style>
 
 <div class="footer">
