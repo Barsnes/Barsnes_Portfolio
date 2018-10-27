@@ -1,10 +1,10 @@
 ---
 layout: portfolio_site
-title: Logos
+title: Graphics
 ---
 
 <div class="image_list">
-{% for image in site.logos %}
+{% for image in site.graphics %}
 <div class="image_container">
     <img src="{{ image.imageurl }}" alt="{{ image.description }}">
     <div class="image_description">
