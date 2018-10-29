@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '../sal.js/dist/sal.css';
 @font-face {
   font-family: Raleway;
   src:   url("../fonts/raleway/raleway-extrabold.woff") format('woff');

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Barsnes </title>
+  <title>Tobias Barsnes // Home</title>
   <link REL="SHORTCUT ICON" HREF="/_assets/logo/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that has a passion for stunning graphics, beautiful photgraphs and eye-catching cinematography. Click to view Tobias' portfolio!" />
@@ -19,22 +19,45 @@
   <meta name="google-site-verification" content="1Uzpi4sY6CTW4W1M3I7xPBIpJFBeuzXm51yETIOOf30" />
   <!-- Yandex -->
   <meta name="yandex-verification" content="f573b42f505253cf" />
+  <!-- Sal.js -->
+  <link rel="script" href="/_assets/sal.js/dist/sal.js">
 </head>
 
 
 
 <body>
 
-<div class="header">
-    <a href="/index"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+<div class="header"
+  data-sal="slide-down"
+  data-sal-delay="150"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="200"
+>
+    <a href="/index"
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="300"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
     <nav>
       <div class="toggle">
         <i class="fas fa-bars menu" aria-hidden="true"></i>
       </div>
       <ul class="menulist navlist">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="/index">Home</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="/portfolio">Portfolio</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="500"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
 </div>
@@ -65,97 +88,11 @@
 
     <div class="slideshow-container">
 
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/logo2.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/batmascot.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/bird-mascot.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/panda-mascot.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/planet_discovery.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    <div class="mySlides fade">
-      <img src="/_assets/images/logo4.png" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-
-
-    </div>
-
-
-    <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
-
-    <div class="landingText">
+    <div class="landingText"
+    data-sal="slide-down"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500">
         <h1>Tobias Barsnes</h1>
         <h2>Portfolio</h2>
     </div>
@@ -163,7 +100,10 @@
   </div>
 </div>
 
-<div class="about">
+<div class="about"
+data-sal="slide-up"
+data-sal-easing="ease-out-bounce"
+data-sal-duration="500">
   <h1>Who I am</h1>
   <div class="about_content">
     <p>I am a 17 year old boy from Norway, that loves doing photography, design and
@@ -175,54 +115,146 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   </div>
 </div>
 
+<div class="work">
+
+  <h1
+  data-sal="slide-up"
+  data-sal-delay="100"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="500">Specialities</h1>
+
+  <div class="workCard cardLogos"
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500"
+  >
+    <h2 class="fal fa-pen-nib"></h2>
+    <h3>Logos</h3>
+    <p>I specialize in making logos that will brand your company to new heights.</p>
+    <a href="logos"><i class="fal fa-long-arrow-right"></i> Learn more</a>
+  </div>
+
+  <div class="workCard cardPhotos"
+    data-sal="slide-up"
+    data-sal-delay="400"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500"
+  >
+    <h2 class="fal fa-camera-alt"></h2>
+    <h3>Photographs</h3>
+    <p>I shoot amazing shots that makes your stand out.</p>
+    <a href="photographs"><i class="fal fa-long-arrow-right"></i> Learn more</a>
+  </div>
+
+  <div class="workCard cardWeb"
+    data-sal="slide-up"
+    data-sal-delay="500"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500"
+  >
+    <h2 class="fal fa-browser"></h2>
+    <h3>Websites</h3>
+    <p>I make websites that want users to explore your content, not others.</p>
+    <a href="websites"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+  </div>
+
+</div>
+
+<div class="featuredWork">
+
+  <h1>Projects</h1>
+
+
+</div>
+
+<style media="screen">
+
+  .featuredWork {
+    display: grid;
+    padding: 0 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6rem 20rem 1fr;
+    text-align: center;
+    grid-gap: 1rem;
+    background-color: #EF6034
+  }
+
+  .featuredWork h1 {
+    grid-column: 1 / 4;
+    margin: auto;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 6rem 20rem 1fr;
+    text-align: center;
+    grid-gap: 1rem;
+  }
+
+  .work h1 {
+    grid-column: 1 / 6;
+    margin: auto;
+  }
+
+  .workCard {
+    background-color: #FFF;
+    color: #000;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+  }
+
+  .workCard h2 {
+    font-size: 2rem;
+    margin: auto;
+  }
+
+  .workCard h3 {
+    font-size: 1.6rem;
+    margin: auto;
+  }
+
+  .workCard p {
+    margin: auto;
+  }
+
+  .viewmore {
+    text-decoration: none;
+    color: #EF6034;
+    margin: auto;
+    transform: translateX(0);
+    transition: transform 150ms ease-in-out
+  }
+
+  .viewmore:hover {
+    color: #000;
+    transform: translateX(.5rem);
+    transition: transform 150ms ease-in-out
+  }
+
+  .cardLogos {
+    grid-column: 2 / 3;
+  }
+  .cardPhotos {
+    grid-column: 3 / 4;
+  }
+  .cardWeb {
+    grid-column: 4 / 5;
+  }
+
+</style>
+
+<!--
+
 <div class="portfolio" id="portfolio">
   <a href="portfolio"><h1>Some of my work</h1></a>
 
   <div id="#portfolio" class="image_list">
-  
-    <div class="image_container hover">
-        <img src="/_assets/images/logo2.png" alt="A logo for Barsnes Bryggeri">
-        <div class="image_description">
-          <div class="image_contents">
-            <h1>Barsnes Bryggeri</h1>
-              <hr>
-            <a href="logos"><h3>See more</h3></a>
-          </div>
-        </div>
-    </div>
-  
-    <div class="image_container hover">
-        <img src="/_assets/images/batmascot.png" alt="A bat mascot logo made by Tobias Barsnes">
-        <div class="image_description">
-          <div class="image_contents">
-            <h1>Bat Mascot</h1>
-              <hr>
-            <a href="logos"><h3>See more</h3></a>
-          </div>
-        </div>
-    </div>
-  
-    <div class="image_container hover">
-        <img src="/_assets/images/bird-mascot.png" alt="A bird mascot logo made by Tobias Barsnes">
-        <div class="image_description">
-          <div class="image_contents">
-            <h1>Bird Mascot Logo</h1>
-              <hr>
-            <a href="logos"><h3>See more</h3></a>
-          </div>
-        </div>
-    </div>
-  
-    <div class="image_container hover">
-        <img src="/_assets/images/d08880b1-6dfb-49b5-bdd6-23a0cfb9b4fb.png" alt="A concept logo">
-        <div class="image_description">
-          <div class="image_contents">
-            <h1>Fox Eternity</h1>
-              <hr>
-            <a href="logos"><h3>See more</h3></a>
-          </div>
-        </div>
-    </div>
   
 
 
@@ -273,6 +305,7 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   </div>
 </div>
 
+-->
 
 <!-- Netlify CMS redirect to /admin -->
 
@@ -294,7 +327,7 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 35rem;
+    height: auto;
     text-align: right;
   }
 
@@ -305,14 +338,14 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
     text-shadow:  0 0 70px #00000070;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 3rem
   }
 
   .landingText h1 {
     font-size: 4rem;
     padding: .5rem;
-    margin-top: 3rem
+    margin-top: 3rem;
   }
 
   .landingText h2 {
@@ -322,18 +355,12 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   }
 
   .landingText {
-    grid-column: 2 /3
+    grid-column: 1 / 2;
+    text-align: center;
   }
 
   @media (max-width: 800px) {
 
-    .landing {
-      text-align: center;
-    }
-
-    .landing_content {
-      grid-template-columns: 1fr;
-    }
 
     .slideshow-container {
       display: none
@@ -385,6 +412,37 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
 
 </style>
 
+<!-- Slide show
+
+
+
+    </div>
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+-->
+
 <div class="footer">
 
   <h1>Copyright © 2018 Tobias Barsnes All Rights Reserved.</h1>
@@ -408,6 +466,14 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
     });
   });
   </script>
+
+<!-- Sal.js -->
+<script src="/_assets/sal.js/dist/sal.js">
+</script>
+
+<script>
+  sal();
+</script>
 
 </body>
 

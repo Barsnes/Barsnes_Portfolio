@@ -2,16 +2,37 @@
 
 <body>
 
-<div class="header">
-    <a href="{{ baseurl }}/index"><img src="{{ baseurl }}/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+<div class="header"
+  data-sal="slide-down"
+  data-sal-delay="150"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="200"
+>
+    <a href="{{ baseurl }}/index"
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="300"><img src="{{ baseurl }}/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
     <nav>
       <div class="toggle">
         <i class="fas fa-bars menu" aria-hidden="true"></i>
       </div>
       <ul class="menulist navlist">
-        <li><a href="{{ baseurl }}/index">Home</a></li>
-        <li><a href="{{ baseurl }}/portfolio">Portfolio</a></li>
-        <li><a href="{{ baseurl }}/contact">Contact</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="{{ baseurl }}/index">Home</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="{{ baseurl }}/portfolio">Portfolio</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="500"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="{{ baseurl }}/contact">Contact</a></li>
       </ul>
     </nav>
 </div>

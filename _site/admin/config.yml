@@ -11,6 +11,23 @@ slug:
   clean_accents: true
 
 collections:
+  - name: "project" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Projects" # Used in the UI, ie.: "New Post"
+    folder: "_projects" # The path to the folder where the documents are stored
+    layout: "project.html"
+    sort: "date:asc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      - {label: "Date", name: "date", widget: "date", format: "MM-YYYY"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Feature Image", name: "image", widget: "image", tagname: "img"}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        field: {label: "Gallery Image", name: "gImage", widget: image}
+
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
@@ -26,17 +43,6 @@ collections:
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
 
-  - name: "logo" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Logos" # Used in the UI, ie.: "New Post"
-    folder: "_logos" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-
   - name: "image" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Images" # Used in the UI, ie.: "New Post"
     folder: "_images" # The path to the folder where the documents are stored
@@ -47,29 +53,6 @@ collections:
       - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
-
-  - name: "graphic" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Graphics" # Used in the UI, ie.: "New Post"
-    folder: "_graphics" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-
-  - name: "website" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Websites" # Used in the UI, ie.: "New Post"
-    folder: "_websites" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Link", name: "link", widget: "string"}
 
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"

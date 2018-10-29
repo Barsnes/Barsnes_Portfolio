@@ -14,43 +14,11 @@
 
     <div class="slideshow-container">
 
-{% for logo in site.logos %}
-
-    <div class="mySlides fade">
-      <img src="{{ logo.imageurl }}" style="width:100%">
-      <div class="numbertext" style="display: none">3 / 3</div>
-      <div class="text" style="display: none">Caption Three</div>
-    </div>
-
-    <span class="dot"></span>
-{% endfor %}
-
-    </div>
-
-
-    <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
-
-    <div class="landingText">
+    <div class="landingText"
+    data-sal="slide-down"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500">
         <h1>Tobias Barsnes</h1>
         <h2>Portfolio</h2>
     </div>
@@ -58,12 +26,157 @@
   </div>
 </div>
 
-<div class="about">
+<div class="about"
+data-sal="slide-up"
+data-sal-easing="ease-out-bounce"
+data-sal-duration="500">
   <h1>{{ page.about.about_title }}</h1>
   <div class="about_content">
     {{ content }}
   </div>
 </div>
+
+<div class="work">
+
+  <h1
+  data-sal="slide-up"
+  data-sal-delay="100"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="500">Specialities</h1>
+
+  <div class="workCard cardLogos"
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500"
+  >
+    <h2 class="fal fa-pen-nib"></h2>
+    <h3>Logos</h3>
+    <p>I specialize in making logos that will brand your company to new heights.</p>
+    <a href="logos"><i class="fal fa-long-arrow-right"></i> Learn more</a>
+  </div>
+
+  <div class="workCard cardPhotos"
+    data-sal="slide-up"
+    data-sal-delay="400"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500"
+  >
+    <h2 class="fal fa-camera-alt"></h2>
+    <h3>Photographs</h3>
+    <p>I shoot amazing shots that makes your stand out.</p>
+    <a href="photographs"><i class="fal fa-long-arrow-right"></i> Learn more</a>
+  </div>
+
+  <div class="workCard cardWeb"
+    data-sal="slide-up"
+    data-sal-delay="500"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="500"
+  >
+    <h2 class="fal fa-browser"></h2>
+    <h3>Websites</h3>
+    <p>I make websites that want users to explore your content, not others.</p>
+    <a href="websites"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+  </div>
+
+</div>
+
+<div class="featuredWork">
+
+  <h1>Projects</h1>
+
+{% for project in site.projects %}
+  <div class="projectCard">
+    <img src="{{ project.image }}" alt="">
+    <h1>{{ project.title }}</h1>
+    <a href="{{ project.link }}"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+  </div>
+{% endfor %}
+</div>
+
+<style media="screen">
+
+  .featuredWork {
+    display: grid;
+    padding: 0 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6rem 20rem 1fr;
+    text-align: center;
+    grid-gap: 1rem;
+    background-color: #EF6034
+  }
+
+  .featuredWork h1 {
+    grid-column: 1 / 4;
+    margin: auto;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 6rem 20rem 1fr;
+    text-align: center;
+    grid-gap: 1rem;
+  }
+
+  .work h1 {
+    grid-column: 1 / 6;
+    margin: auto;
+  }
+
+  .workCard {
+    background-color: #FFF;
+    color: #000;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+  }
+
+  .workCard h2 {
+    font-size: 2rem;
+    margin: auto;
+  }
+
+  .workCard h3 {
+    font-size: 1.6rem;
+    margin: auto;
+  }
+
+  .workCard p {
+    margin: auto;
+  }
+
+  .viewmore {
+    text-decoration: none;
+    color: #EF6034;
+    margin: auto;
+    transform: translateX(0);
+    transition: transform 150ms ease-in-out
+  }
+
+  .viewmore:hover {
+    color: #000;
+    transform: translateX(.5rem);
+    transition: transform 150ms ease-in-out
+  }
+
+  .cardLogos {
+    grid-column: 2 / 3;
+  }
+  .cardPhotos {
+    grid-column: 3 / 4;
+  }
+  .cardWeb {
+    grid-column: 4 / 5;
+  }
+
+</style>
+
+<!--
 
 <div class="portfolio" id="portfolio">
   <a href="portfolio"><h1>Some of my work</h1></a>
@@ -97,6 +210,7 @@
   </div>
 </div>
 
+-->
 
 <!-- Netlify CMS redirect to /admin -->
 
@@ -129,14 +243,14 @@
     text-shadow:  0 0 70px #00000070;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 3rem
   }
 
   .landingText h1 {
     font-size: 4rem;
     padding: .5rem;
-    margin-top: 3rem
+    margin-top: 3rem;
   }
 
   .landingText h2 {
@@ -146,18 +260,12 @@
   }
 
   .landingText {
-    grid-column: 2 /3
+    grid-column: 1 / 2;
+    text-align: center;
   }
 
   @media (max-width: 800px) {
 
-    .landing {
-      text-align: center;
-    }
-
-    .landing_content {
-      grid-template-columns: 1fr;
-    }
 
     .slideshow-container {
       display: none
@@ -208,5 +316,45 @@
   }
 
 </style>
+
+<!-- Slide show
+
+{% for logo in site.logos %}
+
+    <div class="mySlides fade">
+      <img src="{{ logo.imageurl }}" style="width:100%">
+      <div class="numbertext" style="display: none">3 / 3</div>
+      <div class="text" style="display: none">Caption Three</div>
+    </div>
+
+    <span class="dot"></span>
+{% endfor %}
+
+    </div>
+
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+-->
 
 {% include footer.html %}

@@ -14,11 +14,13 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  - images
-  - graphics
-  - posts
-  - websites
-  - logos
+  images:
+    output: false
+  posts:
+    output: true
+  projects:
+    output: true
+    permalink: /:collection/:year/:title
 
 defaults:
   -

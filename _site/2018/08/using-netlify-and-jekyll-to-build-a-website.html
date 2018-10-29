@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Barsnes Using Netlify and Jekyll to build a website</title>
+  <title>Tobias Barsnes // Using Netlify and Jekyll to build a website</title>
   <link REL="SHORTCUT ICON" HREF="/_assets/logo/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that has a passion for stunning graphics, beautiful photgraphs and eye-catching cinematography. Click to view Tobias' portfolio!" />
@@ -19,22 +19,45 @@
   <meta name="google-site-verification" content="1Uzpi4sY6CTW4W1M3I7xPBIpJFBeuzXm51yETIOOf30" />
   <!-- Yandex -->
   <meta name="yandex-verification" content="f573b42f505253cf" />
+  <!-- Sal.js -->
+  <link rel="script" href="/_assets/sal.js/dist/sal.js">
 </head>
 
 
 
 <body>
 
-<div class="header">
-    <a href="/index"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
+<div class="header"
+  data-sal="slide-down"
+  data-sal-delay="150"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="200"
+>
+    <a href="/index"
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease-out-bounce"
+    data-sal-duration="300"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
     <nav>
       <div class="toggle">
         <i class="fas fa-bars menu" aria-hidden="true"></i>
       </div>
       <ul class="menulist navlist">
-        <li><a href="/index">Home</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="/index">Home</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="400"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="/portfolio">Portfolio</a></li>
+        <li
+        data-sal="slide-up"
+        data-sal-delay="500"
+        data-sal-easing="ease-out-bounce"
+        data-sal-duration="300"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
 </div>
@@ -281,6 +304,14 @@ media_folder: "assets/uploads"
     });
   });
   </script>
+
+<!-- Sal.js -->
+<script src="/_assets/sal.js/dist/sal.js">
+</script>
+
+<script>
+  sal();
+</script>
 
 </body>
 

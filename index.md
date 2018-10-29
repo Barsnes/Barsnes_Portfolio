@@ -1,5 +1,6 @@
 ---
 layout: index
+title: Home
 about:
     about_title: Who I am
 snapchat:
