@@ -143,7 +143,7 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   >
     <h2 class="fal fa-camera-alt"></h2>
     <h3>Photographs</h3>
-    <p>I shoot amazing shots that makes your stand out.</p>
+    <p>I shoot amazing shots that makes you stand out.</p>
     <a href="photographs"><i class="fal fa-long-arrow-right"></i> Learn more</a>
   </div>
 
@@ -166,6 +166,11 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   <h1>Projects</h1>
 
 
+  <div class="projectCard" style="background-image: url(/_assets/images/batmascot.png)">
+    <h1>Bat Mascot Logo</h1>
+    <a href="/projects/2018/bat-mascot-logo"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+  </div>
+
 </div>
 
 <style media="screen">
@@ -183,6 +188,44 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   .featuredWork h1 {
     grid-column: 1 / 4;
     margin: auto;
+    position: relative;
+    z-index: 3
+  }
+
+  .projectCard {
+    height: 100%;
+    overflow-x: hidden;
+    display: grid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    transition: scale(1);
+    transition: transform 150ms ease-in-out
+  }
+
+  .projectCard:hover {
+    transform: scale(1.05);
+    transition: transform 150ms ease-in-out
+  }
+
+  .projectCard h1 {
+    margin: auto;
+  }
+
+  .projectCard a {
+    text-decoration: none;
+    color: #EF6034;
+    margin: auto;
+    transform: translateX(0);
+    transition: transform 150ms ease-in-out;
+  }
+
+  .projectCard a:hover {
+    color: #000;
+    transform: translateX(.5rem);
+    transition: transform 150ms ease-in-out
   }
 
   .work {
@@ -223,15 +266,17 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
     margin: auto;
   }
 
-  .viewmore {
+  .workCard a {
     text-decoration: none;
     color: #EF6034;
     margin: auto;
     transform: translateX(0);
-    transition: transform 150ms ease-in-out
+    transition: transform 150ms ease-in-out;
+    position: relative;
+    z-index: 3
   }
 
-  .viewmore:hover {
+  .workCard a:hover {
     color: #000;
     transform: translateX(.5rem);
     transition: transform 150ms ease-in-out
