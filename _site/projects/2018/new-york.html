@@ -87,7 +87,9 @@
   data-sal-delay="100"
   data-sal-easing="ease-out-bounce"
   data-sal-duration="300">New York</h1>
+</div>
 
+<div class="projectImages">
   
   
   
@@ -140,33 +142,11 @@
       >
   </div>
   
-
 </div>
 
 
+
 <style media="screen">
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
   .project {
     padding: 2rem 20%;
     text-align: center;
@@ -186,6 +166,15 @@
 
   .projectContainer img {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .projectImages {
+    column-count: 2;
+    column-gap: 0;
+    padding: 0 20%;
   }
 
   @media (max-width: 800px) {
@@ -196,6 +185,10 @@
 
     .project h1 {
       grid-column: 1 / 2;
+    }
+
+    .projectImages {
+      padding: 0 5%;
     }
   }
 
