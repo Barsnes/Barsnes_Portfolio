@@ -12,7 +12,7 @@
   <!-- Netlify Identity -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <!-- Cookies Consent -->
-  <link rel="stylesheet" type="text/css" href="_assets/css/cookies.css"/>
+  <link rel="stylesheet" type="text/css" href="/_assets/css/cookies.css"/>
   <!-- Jquery -->
   <script src="/_assets/js/jquery.js"></script>
   <!-- Google  -->
@@ -39,7 +39,11 @@
     data-sal-easing="ease-out-bounce"
     data-sal-duration="300"><img src="/_assets/logo/logo.png" alt="Tobias Barsnes Logo"></a>
     <nav>
-      <div class="toggle">
+      <div class="toggle"
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease-out-bounce"
+      data-sal-duration="300">
         <i class="fas fa-bars menu" aria-hidden="true"></i>
       </div>
       <ul class="menulist navlist">
@@ -161,196 +165,23 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
 
 </div>
 
-<div class="featuredWork">
+<div class="featuredWork"
+data-sal="slide-up"
+data-sal-delay="100"
+data-sal-easing="ease-out-bounce"
+data-sal-duration="500">
 
-  <h1>Projects</h1>
+  <h1>Selected Works</h1>
 
 
   <div class="projectCard" style="background-image: url(/_assets/images/batmascot.png)">
-    <h1>Bat Mascot Logo</h1>
-    <a href="/projects/2018/bat-mascot-logo"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+    <div class="projectOverlay">
+      <h1>Mascot Logos</h1>
+      <a href="/projects/2018/mascot-logos"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+    </div>
   </div>
 
 </div>
-
-<style media="screen">
-
-  .featuredWork {
-    display: grid;
-    padding: 0 4rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 6rem 20rem 1fr;
-    text-align: center;
-    grid-gap: 1rem;
-    background-color: #EF6034
-  }
-
-  .featuredWork h1 {
-    grid-column: 1 / 4;
-    margin: auto;
-    position: relative;
-    z-index: 3
-  }
-
-  .projectCard {
-    height: 100%;
-    overflow-x: hidden;
-    display: grid;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    transition: scale(1);
-    transition: transform 150ms ease-in-out
-  }
-
-  .projectCard:hover {
-    transform: scale(1.05);
-    transition: transform 150ms ease-in-out
-  }
-
-  .projectCard h1 {
-    margin: auto;
-  }
-
-  .projectCard a {
-    text-decoration: none;
-    color: #EF6034;
-    margin: auto;
-    transform: translateX(0);
-    transition: transform 150ms ease-in-out;
-  }
-
-  .projectCard a:hover {
-    color: #000;
-    transform: translateX(.5rem);
-    transition: transform 150ms ease-in-out
-  }
-
-  .work {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 6rem 20rem 1fr;
-    text-align: center;
-    grid-gap: 1rem;
-  }
-
-  .work h1 {
-    grid-column: 1 / 6;
-    margin: auto;
-  }
-
-  .workCard {
-    background-color: #FFF;
-    color: #000;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-  }
-
-  .workCard h2 {
-    font-size: 2rem;
-    margin: auto;
-  }
-
-  .workCard h3 {
-    font-size: 1.6rem;
-    margin: auto;
-  }
-
-  .workCard p {
-    margin: auto;
-  }
-
-  .workCard a {
-    text-decoration: none;
-    color: #EF6034;
-    margin: auto;
-    transform: translateX(0);
-    transition: transform 150ms ease-in-out;
-    position: relative;
-    z-index: 3
-  }
-
-  .workCard a:hover {
-    color: #000;
-    transform: translateX(.5rem);
-    transition: transform 150ms ease-in-out
-  }
-
-  .cardLogos {
-    grid-column: 2 / 3;
-  }
-  .cardPhotos {
-    grid-column: 3 / 4;
-  }
-  .cardWeb {
-    grid-column: 4 / 5;
-  }
-
-</style>
-
-<!--
-
-<div class="portfolio" id="portfolio">
-  <a href="portfolio"><h1>Some of my work</h1></a>
-
-  <div id="#portfolio" class="image_list">
-  
-
-
-  <div class="image_container hover">
-      <img src="/_assets/images/img_7528.jpg" alt="Picture of a BMW">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>BMW</h1>
-            <hr>
-          <a href="photographs"><h3>See more</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container hover">
-      <img src="/_assets/images/img_9776.jpg" alt="Endre Stejde feeding a sheep">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Endre Stedje</h1>
-            <hr>
-          <a href="photographs"><h3>See more</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container hover">
-      <img src="/_assets/images/wallet_floating.jpg" alt="A picture where the money is floating">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Floating Money</h1>
-            <hr>
-          <a href="photographs"><h3>See more</h3></a>
-        </div>
-      </div>
-  </div>
-
-  <div class="image_container hover">
-      <img src="/_assets/images/tobias-barsnes-496300-unsplash.jpg" alt="A pictures of Sennheiser headphones">
-      <div class="image_description">
-        <div class="image_contents">
-          <h1>Headphones</h1>
-            <hr>
-          <a href="photographs"><h3>See more</h3></a>
-        </div>
-      </div>
-  </div>
-
-  </div>
-</div>
-
--->
 
 <!-- Netlify CMS redirect to /admin -->
 
@@ -366,129 +197,11 @@ camera at hand, I like to take photographs. Currently I am staying one year in t
   }
 </script>
 
-<style media="screen">
-
-  .landing {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    text-align: right;
-  }
-
-  .landing_content {
-    width: 100%;
-    height: 100%;
-    padding: 5rem 2rem;
-    text-shadow:  0 0 70px #00000070;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 3rem
-  }
-
-  .landingText h1 {
-    font-size: 4rem;
-    padding: .5rem;
-    margin-top: 3rem;
-  }
-
-  .landingText h2 {
-    font-size: 2rem;
-    padding: .5rem;
-    font-family: Lato
-  }
-
-  .landingText {
-    grid-column: 1 / 2;
-    text-align: center;
-  }
-
-  @media (max-width: 800px) {
-
-
-    .slideshow-container {
-      display: none
-    }
-
-    .landingText h1 {
-      font-size: 2rem;
-    }
-
-    .landingText h2 {
-      font-size: 1.5rem;
-    }
-  }
-
-  * {box-sizing: border-box;}
-  body {font-family: Verdana, sans-serif;}
-  .mySlides {display: none;}
-  img {vertical-align: middle;}
-
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 100%;
-    grid-column: 1 / 2;
-    margin: auto;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-
-</style>
-
-<!-- Slide show
-
-
-
-    </div>
-
-
-    <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-    </script>
-
--->
-
-<div class="footer">
+<div class="footer"
+data-sal="slide-up"
+data-sal-delay="100"
+data-sal-easing="ease-out-bounce"
+data-sal-duration="500">
 
   <h1>Copyright © 2018 Tobias Barsnes All Rights Reserved.</h1>
 

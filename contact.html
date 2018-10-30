@@ -3,17 +3,37 @@ layout: standard
 title: Contact
 ---
 
-<div class="container">
+<div class="container"
+data-sal="slide-up"
+data-sal-delay="200"
+data-sal-easing="ease-out-bounce"
+data-sal-duration="500">
   <h1 class="title title-cta">Want to contact me? </h1>
 <form name="contact" netlify-honeypot="bot-field" method="POST" action="thank-you" data-netlify="true" netlify>
   <p class="hidden">
   <label>Don’t fill this out if you're human: <input name="bot-field"></label>
   </p>
-  <input type="text" name="name" placeholder="Full Name" class="name">
-  <input type="email" name="email" placeholder="Email" class="email">
-  <textarea name="message" placeholder="Type a detailed message..." class="message"></textarea>
+  <input type="text" name="name" placeholder="Full Name" class="name"
+  data-sal="slide-up"
+  data-sal-delay="500"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="500">
+  <input type="email" name="email" placeholder="Email" class="email"
+  data-sal="slide-up"
+  data-sal-delay="500"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="500">
+  <textarea name="message" placeholder="Type a detailed message..." class="message"
+  data-sal="slide-up"
+  data-sal-delay="500"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="500"></textarea>
    <div class="captcha" data-netlify-recaptcha></div>
-  <button class="button_dark" type="submit">Send</button>
+  <button class="button_dark" type="submit"
+  data-sal="slide-up"
+  data-sal-delay="500"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="500">Send</button>
 </form>
 <hr>
 <h2>I am looking forward to hearing from you!</h2>

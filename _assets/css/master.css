@@ -41,78 +41,6 @@ a {
   color: #FFF;
 }
 
-.blog__list {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-rows: .4fr 1fr 1fr;
-  grid-gap: 1rem;
-  padding: 0 0 2rem 0;
-}
-
-.blog__list h2 {
-  grid-column: 1 / 5;
-  text-align: center;
-  margin: auto;
-  font-size: 1.3rem;
-  padding: 1.3rem
-}
-
-.blog__list {
-  position: relative;
-  width: 100%;
-  background-color: #0D1321
-}
-
-.blog__link:nth-of-type(odd) {
-  grid-column: 2 / 3;
-  position: relative;
-  background-color: #222222;
-  cursor: pointer;
-  overflow: hidden;
-  transition: transform .2s;
-  vertical-align: middle
-}
-
-.blog__link:nth-of-type(even) {
-  grid-column: 3 / 4
-}
-
-.blog__image {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 0;
-  display: block;
-}
-
-.blog__shadow {
-  -webkit-box-shadow: inset 0px -140px 201px -102px rgba(0,0,0,0.4);
-  -moz-box-shadow: inset 0px -140px 201px -102px rgba(0,0,0,0.4);
-  box-shadow: inset 0px -140px 201px -102px rgba(0,0,0,0.4);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.blog__link h1 {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
-  z-index: 1;
-  font-size: 1.7rem;
-  text-align: left;
-  display: block;
-}
-
-.blog__link:hover {
-  transform: scale(1.05);
-}
-
-
 /* Header */
 
 .header {
@@ -216,76 +144,6 @@ a:-webkit-any-link {
   color: #FFF;
 }
 
-/* portfolio images */
-
-.image_list {
-  line-height: 0;
-  -webkit-column-count: 3;
-  -webkit-column-gap:   0px;
-  -moz-column-count:    3;
-  -moz-column-gap:      0px;
-  column-count:         3;
-  column-gap:           0px;
-  background-color: #4E598C;
-}
-
-.image_container {
-  width: 100% !important;
-  height: auto !important;
-  position: relative;
-  overflow: hidden
-}
-
-.image_container img {
-  width: 100% !important;
-  height: auto !important;
-  position: relative;
-}
-
-.image_description {
-  display: none;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  margin: 0;
-}
-
-.hover:hover .image_description {
-  display: block;
-  background-color: #0d355a70;
-}
-
-.image_contents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-
-.image_contents h1 {
-  padding: 0;
-  font-size: 2rem;
-  margin: 0;
-}
-
-.image_contents h3 {
-  padding: 0;
-  margin: 0;
-}
-
-.image_contents a {
-  text-decoration: none;
-  color: #FFF;
-  font-family: "Lato"
-}
-
-.image_contents hr {
-  margin: 1.3rem 0;
-}
-
 .footer {
   background-color: #0D1321;
   text-align: left;
@@ -323,62 +181,62 @@ a:-webkit-any-link {
   margin: 1rem 25%;
 }
 
-
-@media (max-width: 1000px) {
-
-  .image_list {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-  .portfolio h1 {
-    padding: 2.5rem;
-  }
-
-  .image_container:hover .image_description {
-    display: none;
-  }
-}
-
 @media (max-width: 800px) {
+  .landing {
+    height: calc(100vh - 6rem)
+  }
+
+  .work {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 2fr);
+    padding: 2rem 5%;
+  }
+
+  .work h1 {
+    grid-column: 1 / 2;
+  }
+
+  .workCard {
+    background-color: #FFF;
+    color: #000;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+  }
+
+  .cardLogos {
+    grid-column: 1 / 2;
+  }
+  .cardPhotos {
+    grid-column: 1 / 2;
+  }
+  .cardWeb {
+    grid-column: 1 / 2;
+  }
+
+  .featuredWork {
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem repeat(auto, 1fr);
+  }
+
+  .featuredWork h1 {
+    grid-column: 1 / 2;
+  }
+
+  .about_content {
+    width: 90%;
+    margin: 1.5em 5%;
+    text-align: left;
+    font-family: "Lato"
+  }
+
   .image_list {
   -moz-column-count:    2;
   -webkit-column-count: 2;
   column-count:         2;
-  }
-
-  .blog__list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: .2fr 1fr .2fr;
-    grid-template-rows: auto;
-    grid-gap: 0rem;
-    padding: 2rem 0;
-  }
-
-  .blog__list {
-    position: relative;
-    width: 100%;
-    background-color: #0D1321
-  }
-
-  .blog__link:nth-child(1) {
-    grid-column: 2 / 3;
-    position: relative;
-    background-color: #222222;
-    cursor: pointer;
-    overflow: hidden;
-    transition: transform .2s;
-    vertical-align: middle
-  }
-
-  .blog__link:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3
-  }
-
-  .blog__link h1 {
-    font-size: .95rem
   }
 
   /* Header */
@@ -432,10 +290,173 @@ a:-webkit-any-link {
   }
 }
 
-@media (max-width: 420px) {
-  .image_list {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
+.landing {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  text-align: right;
+}
+
+.landing_content {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 2rem;
+  text-shadow:  0 0 70px #00000070;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem
+}
+
+.landingText h1 {
+  font-size: 4rem;
+  padding: .5rem;
+  margin-top: 3rem;
+}
+
+.landingText h2 {
+  font-size: 2rem;
+  padding: .5rem;
+  font-family: Lato
+}
+
+.landingText {
+  grid-column: 1 / 2;
+  text-align: center;
+}
+
+.featuredWork {
+  display: grid;
+  padding: 0 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6rem 20rem 1fr;
+  text-align: center;
+  grid-gap: 1rem;
+  background-color: #EF6034;
+}
+
+.featuredWork h1 {
+  grid-column: 1 / 4;
+  margin: auto;
+  position: relative;
+  z-index: 3
+}
+
+.projectCard {
+  height: 100%;
+  overflow-x: hidden;
+  display: grid;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  transition: scale(1);
+  transition: transform 150ms ease-in-out;
+}
+
+.projectCard:hover {
+  transform: scale(1.05);
+  transition: transform 150ms ease-in-out
+}
+
+.projectOverlay {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 20%;
+  background-color: none;
+  transition: display 150ms ease;
+  transition: background 150ms ease
+}
+
+.projectCard:hover .projectOverlay {
+  display: grid;
+  transition: display 150ms ease;
+  transition: background 150ms ease;
+  background-color: #2648a560;
+}
+
+.projectOverlay h1 {
+  margin: auto;
+  text-shadow: 0 0 30px #000
+}
+
+.projectOverlay a {
+  text-decoration: none;
+  color: #EF6034;
+  margin: auto;
+  transform: translateX(0);
+  transition: transform 150ms ease-in-out;
+  text-align: center;
+}
+
+.projectOverlay a:hover {
+  color: #000;
+  transform: translateX(.5rem);
+  transition: transform 150ms ease-in-out
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 6rem 20rem 1fr;
+  text-align: center;
+  grid-gap: 1rem;
+}
+
+.work h1 {
+  grid-column: 1 / 6;
+  margin: auto;
+}
+
+.workCard {
+  background-color: #FFF;
+  color: #000;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+}
+
+.workCard h2 {
+  font-size: 2rem;
+  margin: auto;
+}
+
+.workCard h3 {
+  font-size: 1.6rem;
+  margin: auto;
+}
+
+.workCard p {
+  margin: auto;
+}
+
+.workCard a {
+  text-decoration: none;
+  color: #EF6034;
+  margin: auto;
+  transform: translateX(0);
+  transition: transform 150ms ease-in-out;
+  position: relative;
+  z-index: 3
+}
+
+.workCard a:hover {
+  color: #000;
+  transform: translateX(.5rem);
+  transition: transform 150ms ease-in-out
+}
+
+.cardLogos {
+  grid-column: 2 / 3;
+}
+.cardPhotos {
+  grid-column: 3 / 4;
+}
+.cardWeb {
+  grid-column: 4 / 5;
 }

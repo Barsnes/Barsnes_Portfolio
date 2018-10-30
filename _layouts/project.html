@@ -1,0 +1,66 @@
+{% include head.html %}
+{% include header.html %}
+
+
+<div class="project">
+
+  <h1
+  data-sal="slide-up"
+  data-sal-delay="100"
+  data-sal-easing="ease-out-bounce"
+  data-sal-duration="300">{{ page.title }}</h1>
+
+
+  {% assign delay = 500 %}
+  {% for image in page.gallery %}
+  {% assign delay = delay | plus: 100 %}
+  <div class="projectContainer">
+      <img src="{{ image }}" alt=""
+      data-sal="slide-up"
+      data-sal-delay="100"
+      data-sal-easing="ease-out-bounce"
+      data-sal-duration="{{ delay }}"
+      >
+  </div>
+  {% endfor %}
+
+</div>
+
+<style media="screen">
+
+  .project {
+    padding: 2rem 20%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project h1 {
+    grid-column: 1 / 3;
+    margin: 2rem auto;
+  }
+
+  .projectContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .projectContainer img {
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .project {
+      padding: 1rem 5%;
+      grid-template-columns: 1fr;
+    }
+
+    .project h1 {
+      grid-column: 1 / 2;
+    }
+  }
+
+</style>
+
+
+{% include footer.html %}
