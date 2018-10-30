@@ -28,32 +28,6 @@ collections:
         widget: "list"
         field: {label: "Gallery Image", name: "gImage", widget: image}
 
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Blog Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
-    layout: "blog.html"
-    sort: "date:asc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "Blog"}
-      - {label: "Author", name: "author", widget: "string", default: "Tobias Barsnes"}
-      - {label: "Publish Date", name: "date", widget: "date", format: "DD-MM-YYYY"}
-      - {label: "Image", name: "image", widget: "image", tagname: "img"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown", tagname: "p"}
-
-  - name: "image" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Images" # Used in the UI, ie.: "New Post"
-    folder: "_images" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Image", name: "imageurl", widget: "image", tagname: "img"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-
   - name: "about" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "About" # Used in the UI, ie.: "New Post"
     delete: false
