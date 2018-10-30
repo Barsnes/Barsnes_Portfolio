@@ -181,115 +181,6 @@ a:-webkit-any-link {
   margin: 1rem 25%;
 }
 
-@media (max-width: 800px) {
-  .landing {
-    height: calc(100vh - 6rem)
-  }
-
-  .work {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(3, 2fr);
-    padding: 2rem 5%;
-  }
-
-  .work h1 {
-    grid-column: 1 / 2;
-  }
-
-  .workCard {
-    background-color: #FFF;
-    color: #000;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1rem;
-    display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-  }
-
-  .cardLogos {
-    grid-column: 1 / 2;
-  }
-  .cardPhotos {
-    grid-column: 1 / 2;
-  }
-  .cardWeb {
-    grid-column: 1 / 2;
-  }
-
-  .featuredWork {
-    grid-template-columns: 1fr;
-    grid-template-rows: 6rem repeat(auto, 1fr);
-  }
-
-  .featuredWork h1 {
-    grid-column: 1 / 2;
-  }
-
-  .about_content {
-    width: 90%;
-    margin: 1.5em 5%;
-    text-align: left;
-    font-family: "Lato"
-  }
-
-  .image_list {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-
-  /* Header */
-
-  .header {
-    height: 6em;
-    width: 100%;
-    font-family: "Lato";
-    text-decoration: none;
-    background-color: #EF6034;
-    width: 100%;
-    color: #FFF;
-    display: grid;
-    grid-template-columns: 30% 40% 20% 10% ;
-    grid-template-rows: 6em;
-    align-items: center;
-  }
-
-  .toggle {
-    display: block;
-    font-size: 2rem;
-    grid-column: 3 / 4;
-    height: 100%;
-    display: grid;
-    align-items: center;
-    line-height: 3em;
-  }
-
-  .active {
-    display: block;
-    position: absolute;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    text-align: center;
-    background-color: #EF6034
-  }
-
-  .active li {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-  .navlist {
-    display: none
-  }
-
-  .header ul {
-    height: auto;
-    padding: 1.5rem 0;
-  }
-}
-
 .landing {
   background-repeat: no-repeat;
   background-size: cover;
@@ -328,9 +219,8 @@ a:-webkit-any-link {
 
 .featuredWork {
   display: grid;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 6rem 20rem 1fr;
   text-align: center;
   grid-gap: 1rem;
   background-color: #EF6034;
@@ -344,7 +234,7 @@ a:-webkit-any-link {
 }
 
 .projectCard {
-  height: 100%;
+  height: 15rem;
   overflow-x: hidden;
   display: grid;
   background-size: cover;
@@ -459,4 +349,113 @@ a:-webkit-any-link {
 }
 .cardWeb {
   grid-column: 4 / 5;
+}
+
+
+@media (max-width: 800px) {
+  .landing {
+    height: calc(100vh - 6rem)
+  }
+
+  .work {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 2fr);
+    padding: 2rem 5%;
+  }
+
+  .work h1 {
+    grid-column: 1 / 2;
+  }
+
+  .workCard {
+    background-color: #FFF;
+    color: #000;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+  }
+
+  .cardLogos {
+    grid-column: 1 / 2;
+  }
+  .cardPhotos {
+    grid-column: 1 / 2;
+  }
+  .cardWeb {
+    grid-column: 1 / 2;
+  }
+
+  .featuredWork {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredWork h1 {
+    grid-column: 1 / 2;
+  }
+
+  .about_content {
+    width: 90%;
+    margin: 1.5em 5%;
+    text-align: left;
+    font-family: "Lato"
+  }
+
+  .image_list {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+
+  /* Header */
+
+  .header {
+    height: 6em;
+    width: 100%;
+    font-family: "Lato";
+    text-decoration: none;
+    background-color: #EF6034;
+    width: 100%;
+    color: #FFF;
+    display: grid;
+    grid-template-columns: 30% 40% 20% 10% ;
+    grid-template-rows: 6em;
+    align-items: center;
+  }
+
+  .toggle {
+    display: block;
+    font-size: 2rem;
+    grid-column: 3 / 4;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    line-height: 3em;
+  }
+
+  .active {
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    background-color: #EF6034
+  }
+
+  .active li {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .navlist {
+    display: none
+  }
+
+  .header ul {
+    height: auto;
+    padding: 1.5rem 0;
+  }
 }
