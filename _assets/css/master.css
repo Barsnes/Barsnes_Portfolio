@@ -388,6 +388,13 @@ a:-webkit-any-link {
     grid-column: 1 / 2;
   }
 
+  .projectOverlay {
+  display: grid;
+  transition: display 150ms ease;
+  transition: background 150ms ease;
+  background-color: #2648a560;
+}
+  
   .featuredWork {
     grid-template-columns: 1fr;
   }
