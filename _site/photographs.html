@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tobias Barsnes // New York</title>
+  <title>Tobias Barsnes // Photographs</title>
   <link REL="SHORTCUT ICON" HREF="/_assets/logo/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that has a passion for stunning graphics, beautiful photgraphs and eye-catching cinematography. Click to view Tobias' portfolio!" />
@@ -81,71 +81,59 @@
   </script>
 
 
-
 <div class="project">
 
   <h1
   data-sal="slide-up"
   data-sal-delay="100"
   data-sal-easing="ease-out-bounce"
-  data-sal-duration="300">New York</h1>
+  data-sal-duration="300">Photographs</h1>
+</div>
+
+<div class="stats">
+  <a href="https://unsplash.com">Stats from Unsplash</a>
+  <div class="statsText"><h2>Views</h2>
+    <h3 class="views"></h3>
+  </div>
+  <div class="statsText">
+    <h2>Downloads</h2>
+    <h3 class="downloads"></h3>
+  </div>
 </div>
 
 <div class="projectImages">
-  
-  
-  
+
   <div class="projectContainer">
-      <img src="/_assets/images/header.jpg" alt="Created by Tobias Barsnes"
-      data-sal="slide-up"
-      data-sal-delay="100"
-      data-sal-easing="ease-out-bounce"
-      data-sal-duration="600"
-      >
+
   </div>
-  
-  
-  <div class="projectContainer">
-      <img src="/_assets/images/img_7337-3.jpg" alt="Created by Tobias Barsnes"
-      data-sal="slide-up"
-      data-sal-delay="100"
-      data-sal-easing="ease-out-bounce"
-      data-sal-duration="700"
-      >
-  </div>
-  
-  
-  <div class="projectContainer">
-      <img src="/_assets/images/img_7408.jpg" alt="Created by Tobias Barsnes"
-      data-sal="slide-up"
-      data-sal-delay="100"
-      data-sal-easing="ease-out-bounce"
-      data-sal-duration="800"
-      >
-  </div>
-  
-  
-  <div class="projectContainer">
-      <img src="/_assets/images/img_7416.jpg" alt="Created by Tobias Barsnes"
-      data-sal="slide-up"
-      data-sal-delay="100"
-      data-sal-easing="ease-out-bounce"
-      data-sal-duration="900"
-      >
-  </div>
-  
-  
-  <div class="projectContainer">
-      <img src="/_assets/images/img_7528.jpg" alt="Created by Tobias Barsnes"
-      data-sal="slide-up"
-      data-sal-delay="100"
-      data-sal-easing="ease-out-bounce"
-      data-sal-duration="1000"
-      >
-  </div>
-  
+
 </div>
 
+<script>
+
+$.getJSON('https://api.unsplash.com/users/barsnes/photos/?client_id=8b3c252d6e0cb802c2a6b4749ef5e151d523dc5973c8e7f0d4c575f08aa4d4bd', function(data) {
+$.each(data, function(index, value) {
+
+    var imageURL = value.urls.regular;
+
+    $('.projectContainer').append('<img src="' + imageURL + '">');
+
+  });
+});
+
+$.getJSON('https://api.unsplash.com/users/barsnes/statistics/?client_id=8b3c252d6e0cb802c2a6b4749ef5e151d523dc5973c8e7f0d4c575f08aa4d4bd', function(data) {
+$.map(data, function(index) {
+
+    var totalViews = data.views.total;
+    var totalDownloads = data.downloads.total;
+
+    $('.views').text(totalViews);
+    $('.downloads').text(totalDownloads);
+
+  });
+});
+
+</script>
 <div class="footer"
 data-sal="slide-up"
 data-sal-delay="100"

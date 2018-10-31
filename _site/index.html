@@ -21,6 +21,8 @@
   <meta name="yandex-verification" content="f573b42f505253cf" />
   <!-- Sal.js -->
   <link rel="script" href="/_assets/sal.js/dist/sal.js">
+  <!-- Unsplash API -->
+  <link rel="script" href="/_assets/js/unsplash.js">
 </head>
 
 
@@ -201,6 +203,17 @@ data-sal-duration="500">
       }
     });
   }
+</script>
+
+<script>
+
+$.getJSON('https://api.behance.net/v2/users/barsnes/projects?client_id=tIWBW0rUjYc3KY1INlcn4E6HTpNeTHmm', function(data) {
+  $.each(data, function(index, value) {
+         console.log(value);
+
+         });
+});
+
 </script>
 
 <div class="footer"
