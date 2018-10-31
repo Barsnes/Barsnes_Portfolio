@@ -378,7 +378,7 @@ a:-webkit-any-link {
 }
 
 .stats {
-  padding: 0 5% 1rem 5%;
+  padding: 0 20% 1rem 20%;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
