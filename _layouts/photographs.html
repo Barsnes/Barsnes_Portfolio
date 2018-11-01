@@ -35,7 +35,7 @@ $.getJSON('https://api.unsplash.com/users/barsnes/photos/?client_id=8b3c252d6e0c
 $.each(data, function(index, value) {
     var imageURL = value.urls.regular;
 
-    $('.projectContainer').append('<img src="' + imageURL + '">');
+    $('.projectContainer').append('<img src="' + imageURL + '" alt="Image by Tobias Barsnes">');
 
   });
 });
