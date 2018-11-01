@@ -31,7 +31,7 @@
 
 <script>
 
-$.getJSON('https://api.unsplash.com/users/barsnes/photos/?client_id=8b3c252d6e0cb802c2a6b4749ef5e151d523dc5973c8e7f0d4c575f08aa4d4bd', function(data) {
+$.getJSON('https://api.unsplash.com/users/barsnes/photos/?client_id=8b3c252d6e0cb802c2a6b4749ef5e151d523dc5973c8e7f0d4c575f08aa4d4bd&per_page=30', function(data) {
 $.each(data, function(index, value) {
     var imageURL = value.urls.regular;
 
