@@ -46,7 +46,9 @@ $.map(data, function(index) {
     var totalViews = data.views.total;
     var totalDownloads = data.downloads.total;
 
-    $('.views').text(totalViews);
+    var newViews = totalViews.toString().match(/.{3}/g).join(' ');
+
+    $('.views').text(newViews);
     $('.downloads').text(totalDownloads);
 
   });
