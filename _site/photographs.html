@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tobias Barsnes is a 17 year old boy from norway that has a passion for stunning graphics, beautiful photgraphs and eye-catching cinematography. Click to view Tobias' portfolio!" />
   <meta name="keywords" content="barsnes, tobias barsnes"/>
+  <meta name="theme-color" content="#EF6034">
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/_assets/css/master.css">
   <link href="/_assets/css/fontawesome/css/all.css" rel="stylesheet">
@@ -111,7 +112,7 @@
 
 <script>
 
-$.getJSON('https://api.unsplash.com/users/barsnes/photos/?client_id=8b3c252d6e0cb802c2a6b4749ef5e151d523dc5973c8e7f0d4c575f08aa4d4bd', function(data) {
+$.getJSON('https://api.unsplash.com/users/barsnes/photos/?client_id=8b3c252d6e0cb802c2a6b4749ef5e151d523dc5973c8e7f0d4c575f08aa4d4bd&per_page=30', function(data) {
 $.each(data, function(index, value) {
     var imageURL = value.urls.regular;
 
