@@ -1,6 +1,6 @@
 ---
 layout: project
-date: 10-2018
+date: 01-10-2018
 title: Mascot Logos
 image: /_assets/images/batmascot.png
 gallery:
@@ -10,4 +10,3 @@ gallery:
   - /_assets/images/panda-mascot.png
   - /_assets/images/logo4.png
 ---
-
