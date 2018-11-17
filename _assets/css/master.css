@@ -408,6 +408,72 @@ a:-webkit-any-link {
   color: #EF6034
 }
 
+/* Websites */
+.websiteSkills {
+  display: grid;
+  text-align: center;
+  padding: 3rem 1rem 6rem 1rem;
+}
+
+.websiteSkills h1 {
+  padding: 1rem
+}
+
+.skills {
+  margin: auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.skillBar {
+  background: #232323;
+  width: 100%;
+  height: 2rem;
+  position: relative;
+}
+
+.skillBar h4 {
+  background: #6a6;
+  height: 100%;
+  padding: .5rem;
+  text-align: left
+}
+
+.skillBar h5 {
+  text-align: right;
+  position: absolute;
+  right: .1rem;
+  top: 25%;
+}
+
+.offers {
+  display: grid;
+  text-align: center;
+  padding: 3rem 25% 6rem 25%;
+  background: #EF6034;
+}
+
+.offers h1 {
+  padding: 1rem
+}
+
+.offerList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .5rem;
+}
+
+.offerList h3 {
+  padding: .5rem;
+  background: #ddd;
+  color: #EF6034;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
   @media (max-width: 800px) {
     .project {
       padding: 1rem 5%;
