@@ -1,0 +1,22 @@
+{
+  "name": "barsnes",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barsnes/Barsnes_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Tobias Barsnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barsnes/Barsnes_Portfolio/issues"
+  },
+  "homepage": "https://github.com/Barsnes/Barsnes_Portfolio#readme"
+}

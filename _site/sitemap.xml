@@ -13,6 +13,10 @@
 <lastmod>2018-10-01T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/projects/2018/sofia-odvik</loc>
+<lastmod>2018-11-03T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/contact.html</loc>
 </url>
 <url>
@@ -26,6 +30,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/thank-you.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/websites.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/_assets/logo/logo.pdf</loc>
