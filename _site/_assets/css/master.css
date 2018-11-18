@@ -611,4 +611,40 @@ a:-webkit-any-link {
   .statsText {
     width: 80%;
   }
+
+  /* Websites */
+  .websiteSkills {
+    padding: 3rem 1rem 6rem 1rem;
+  }
+
+  .skills {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-gap: 0
+  }
+
+  .skillBar {
+    margin-bottom: .5rem;
+  }
+
+  .offers {
+    padding: 3rem 5% 6rem 5%;
+  }
+
+  .offers h1 {
+    padding: 1rem
+  }
+
+  .offerList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offerList h3 {
+    padding: .5rem;
+    background: #ddd;
+    color: #EF6034;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
 }
