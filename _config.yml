@@ -28,3 +28,16 @@ defaults:
       path:            "admin"
     values:
       sitemap:         false
+
+############################################################
+# Site configuration for the WebP Generator Plugin
+# The values here represent the defaults if nothing is set
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/_assets/images"]
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+  gifs: [".gif"]
+  regenerate: false
+  webp_path: nil
+  exclude: []
