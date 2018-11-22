@@ -71,7 +71,7 @@ DEPENDENCIES
   jekyll (~> 3.8.3)
   jekyll-feed (~> 0.6)
   jekyll-sitemap
-  jekyll-webp
+  jekyll-webp (~> 1.0)
   minima (~> 2.0)
   tzinfo-data
 
