@@ -19,7 +19,7 @@ style="background-color: #0D1321">
     </div>
   </div>
 
-{% for project in site.projects %}
+{% for project in site.projects reversed %}
   <div class="projectCard" style="background-image: url({{ project.image }})">
     <div class="projectOverlay">
       <h1>{{ project.title }}</h1>

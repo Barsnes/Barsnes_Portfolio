@@ -83,7 +83,7 @@ data-sal-duration="500">
 
   <h1>Selected Works</h1>
 
-{% for project in site.projects limit: 6 %}
+{% for project in site.projects reversed limit: 4 %}
   <div class="projectCard" style="background-image: url({{ project.image }})">
     <div class="projectOverlay">
       <h1>{{ project.title }}</h1>
@@ -96,6 +96,13 @@ data-sal-duration="500">
     <div class="projectOverlay">
       <h1>Quixz eSports Website</h1>
       <a href="https://quixz.eu" target="_blank"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
+    </div>
+  </div>
+
+  <div class="projectCard" style="background-image: url(/_assets/images/img_7121.jpg)">
+    <div class="projectOverlay">
+      <h1>Photographs</h1>
+      <a href="{{ baseurl }}/photographs"><i class="fal fa-long-arrow-right" class="viewMore"></i> Learn more</a>
     </div>
   </div>
 </div>
