@@ -474,6 +474,35 @@ a:-webkit-any-link {
   margin: auto;
 }
 
+.greenLandscape {
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  background: url(../svg/greenLandscape.svg) no-repeat top left;
+  background-size: contain;
+  top: 20rem;
+  left: 2rem;
+}
+
+.greenLandscape p {
+  display: none
+}
+
+.desertLandscape {
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  background: url(../svg/desertLandscape.svg) no-repeat top left;
+  background-size: contain;
+  top: 55rem;
+  right: 2rem;
+}
+
+.desertLandscape p {
+  display: none
+}
+
+
   @media (max-width: 800px) {
     .project {
       padding: 1rem 5%;
@@ -637,5 +666,10 @@ a:-webkit-any-link {
 
   .offerList {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .greenLandscape,
+  .desertLandscape {
+    display: none
   }
 }
